@@ -1,7 +1,7 @@
 const ext = {
   'document': 'html',
   'spreadsheet': 'json',
-  'presentation': 'json'
+  'presentation': 'html'
 }
 
 module.exports = function (type) {

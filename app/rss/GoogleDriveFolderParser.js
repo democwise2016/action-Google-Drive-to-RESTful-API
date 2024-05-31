@@ -5,7 +5,7 @@ const StringSliceBetween = require('./../lib/StringSliceBetween.js');
 // const regex = /https:\/\/drive\.google\.com\/file\/d\/.*?\/view\?usp\\u003ddrive_web/g;
 const regexSheet = /https:\/\/docs\.google\.com\/spreadsheets\/d\/.*?\/edit\?usp\\u003ddrive_web/g;
 const regexDoc = /https:\/\/docs\.google\.com\/document\/d\/.*?\/edit\?usp\\u003ddrive_web/g;
-const regexPresentation = /https:\/\/docs\.google\.com\/document\/d\/.*?\/edit\?usp\\u003ddrive_web/g;
+const regexPresentation = /https:\/\/docs\.google\.com\/presentation\/d\/.*?\/edit\?usp\\u003ddrive_web/g;
 
 function parsingDataJSON(data, regex, type) {
   let matches = data.match(regex);
