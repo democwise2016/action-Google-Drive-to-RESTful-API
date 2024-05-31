@@ -10,6 +10,7 @@ module.exports = async function (feedJSON) {
   // console.log(feedJSON)
 
   for (let i = 0; i < feedJSON.items.length; i++) {
+    fs.writeFileSync(`/app/tmp/GetHTML.txt`, (new Date()).getTime() + '', 'utf8') 
     let {type, link} = feedJSON.items[i]
 
     if (type === 'spreadsheet') {

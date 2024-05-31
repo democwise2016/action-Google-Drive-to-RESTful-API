@@ -6,8 +6,8 @@ const RSSFeedBuilder = require('./builder/RSSFeedBuilder.js')
 const GoogleDriveFeedBuilder = require('./gdrive/GoogleDriveFeedBuilder.js')
 const GoogleDriveFeedIndexBuilder = require('./gdrive/GoogleDriveFeedIndexBuilder.js')
 
-const RSSDownloaderItems = require('./items/RSSDownloaderItems.js')
-const getFileListByCreationDate = require('./items/getFileListByCreationDate.js')
+// const RSSDownloaderItems = require('./items/RSSDownloaderItems.js')
+// const getFileListByCreationDate = require('./items/getFileListByCreationDate.js')
 
 const fs = require('fs');
 
@@ -64,16 +64,16 @@ module.exports = async function (feedItem = {}) {
   // ---------
   if (parserType === 'rss') {
     // let filename = OutputFeedFilenameBuilder(feedItem)
-    feedJSON.items = await RSSDownloaderItems(feedJSON.items, feedItem)
+    // feedJSON.items = await RSSDownloaderItems(feedJSON.items, feedItem)
     
-    // ---------
-    // 建立Feed
-    let outputFeedString = await RSSFeedBuilder(feedJSON)
+    // // ---------
+    // // 建立Feed
+    // let outputFeedString = await RSSFeedBuilder(feedJSON)
 
-    // console.log(outputFeedString)
-    fs.writeFileSync(`/output/${feedFilename}.rss`, outputFeedString, 'utf8') 
-    RSSBuildCounter++
-    console.log([`[RSSDownloader] RSS build`, feedFilename, RSSBuildCounter, (new Date().toISOString())].join('\t'))
+    // // console.log(outputFeedString)
+    // fs.writeFileSync(`/output/${feedFilename}.rss`, outputFeedString, 'utf8') 
+    // RSSBuildCounter++
+    // console.log([`[RSSDownloader] RSS build`, feedFilename, RSSBuildCounter, (new Date().toISOString())].join('\t'))
   }
   else if (parserType === 'gdrive') {
     await GoogleDriveFeedBuilder(feedJSON)

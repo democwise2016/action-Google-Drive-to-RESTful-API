@@ -1,4 +1,4 @@
-const puppeteer = require('puppeteer')
+// const puppeteer = require('puppeteer')
 const fetch = require('node-fetch')
 const iconv = require('iconv-lite')
 const cheerio = require('cheerio')
@@ -71,9 +71,9 @@ async function GetHTML (url, options = {}) {
 
   // crawler = 'fetch'
 
-  if (TorController.isStarted()) {
-    puppeteerArgs.push('--proxy-server=socks5://127.0.0.1:9050')
-  }
+  // if (TorController.isStarted()) {
+  //   puppeteerArgs.push('--proxy-server=socks5://127.0.0.1:9050')
+  // }
 
   // if (timeout < 3 * 60 * 1000) {
   //   timeout = 3 * 60 * 1000
@@ -121,7 +121,7 @@ async function GetHTML (url, options = {}) {
       }
       currentThreads++
       console.log(['[GetHTML] start', url, currentThreads, crawler, (new Date().toISOString())].join('\t'))
-
+      crawler = 'fetch'
 
       if (crawler === 'fetch') {
         const response = await fetch(url);

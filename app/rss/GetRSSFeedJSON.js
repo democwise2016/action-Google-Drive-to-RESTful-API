@@ -1,4 +1,4 @@
-let Parser = require('rss-parser');
+// let Parser = require('rss-parser');
 let GoogleDriveFolderParser = require('./GoogleDriveFolderParser.js');
 
 let DetectParserType = require('./DetectParserType.js');
@@ -21,19 +21,19 @@ module.exports = async function (feedURL, options = {}) {
     let parserType = DetectParserType(feedURL)
 
     if (parserType === 'rss' && !parser) {
-      parser = new Parser({
-        customFields: {
-          feed: [],
-          item: [
-            // ['media:content', 'media']
-            'dc:content',
-            ['media:content', 'media:content', {keepArray: true}],
-          ],
-        },
-        requestOptions: {
-          rejectUnauthorized: false
-        }
-      })
+      // parser = new Parser({
+      //   customFields: {
+      //     feed: [],
+      //     item: [
+      //       // ['media:content', 'media']
+      //       'dc:content',
+      //       ['media:content', 'media:content', {keepArray: true}],
+      //     ],
+      //   },
+      //   requestOptions: {
+      //     rejectUnauthorized: false
+      //   }
+      // })
     }
 
     let crawlTargetURL = feedURL

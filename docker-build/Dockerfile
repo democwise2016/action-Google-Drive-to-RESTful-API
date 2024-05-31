@@ -19,14 +19,6 @@ FROM node:14.21.3-bullseye
 # RUN cat /etc/apt/sources.list
 
 # RUN apt-get clean 
-RUN apt update
-
-RUN apt-get install ffmpeg -y
-
-RUN apt install python3-pip -y
-RUN pip3 install youtube-dl
-
-# ==============================================
 
 # CMD ["node", "/app/index.js"]
 CMD ["bash", "/startup.sh"]
@@ -34,7 +26,7 @@ CMD ["bash", "/startup.sh"]
 # RUN mkdir -p /node
 # WORKDIR /node
 
-RUN npm link puppeteer@20.4.0
+# RUN npm link puppeteer@20.4.0
 
 RUN npm link iconv-lite@0.6.3
 
@@ -50,9 +42,9 @@ RUN npm link jquery@3.6.3
 
 RUN npm link jsdom@22.1.0
 
-RUN npm link rss-parser@3.13.0
+# RUN npm link rss-parser@3.13.0
 RUN npm link feed@4.2.2
-RUN npm link @extractus/feed-extractor@6.2.2
+# RUN npm link @extractus/feed-extractor@6.2.2
 
 # RUN npm link typescript 
 # RUN npm link husky@7
@@ -65,31 +57,27 @@ RUN npm link htmlentities@1.0.0
 
 RUN npm link node-fetch@2
 
-RUN npm install fluent-ffmpeg@2.1.2
-RUN npm install progress-stream@2.0.0
-RUN npm install sanitize-filename@1.6.3
+# RUN npm install tor-request@3.1.0
+# RUN npm install socks-proxy-agent@8.0.1
+# RUN npm install socks5-https-client@1.2.1
+# RUN npm install tree-kill@1.2.2
 
-RUN npm install tor-request@3.1.0
-RUN npm install socks-proxy-agent@8.0.1
-RUN npm install socks5-https-client@1.2.1
-RUN npm install tree-kill@1.2.2
-
-RUN apt install tor -y
+# RUN apt install tor -y
 # RUN npm config get proxy
 
 RUN npm link moment@2.29.4
 RUN npm link linkify-urls@3.1.1
 RUN npm link follow-redirects@1.15.2
-RUN npm link get-mp3-duration@1.0.0
+# RUN npm link get-mp3-duration@1.0.0
 
-RUN apt-get install -y chromium
+# RUN apt-get install -y chromium
 #RUN apt-get install -y apt install libgconf-2-4 libatk1.0-0 libatk-bridge2.0-0 libgdk-pixbuf2.0-0 libgtk-3-0 libgbm-dev libnss3-dev libxss-dev
 
 RUN npm link cache-manager@4.0.1
 RUN npm link cache-manager-sqlite@0.2.0
 
 # 這個會很常壞，所以要放到最後安裝
-RUN npm link ytdl-core@4.11.4
+# RUN npm link ytdl-core@4.11.4
 
 # ----------------
 
@@ -112,16 +100,16 @@ RUN npm link ytdl-core@4.11.4
 
 # RUN npm -g htmlentities@1.0.0
 
-RUN pip install pytube
+# RUN pip install pytube
 
 # ========================
 
-RUN apt-get install -y tor
+# RUN apt-get install -y tor
 # RUN tor --version
 
 
-RUN npm link he@1.2.0
-RUN npm link mime-types@2.1.35
+# RUN npm link he@1.2.0
+# RUN npm link mime-types@2.1.35
 
 RUN npm link csv-parser@3.0.0
 RUN npm link axios@1.7.2
