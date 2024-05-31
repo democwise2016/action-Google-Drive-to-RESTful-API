@@ -27,13 +27,15 @@ module.exports = function () {
   let body = []
   feedList.forEach((feedItem) => {
     let {title, feedID, feedURL, homepageURL} = feedItem
-    if (!feedID) {
-      feedID = ParseUBID(feedURL)
-    }
+    // if (!feedID) {
+    //   feedID = ParseUBID(feedURL)
+    // }
 
     let filename = OutputFeedFilenameBuilder(feedItem)
       
-    let outputFeedURL = publicURL + filename + '.rss'
+    // let outputFeedURL = publicURL + filename + '.rss'
+    let outputFeedURL = publicURL + feedID + '.html'
+
     body.push(`<li>
       <a href="${outputFeedURL}" target="_blank">${title}</a>
       (<a href="${homepageURL}" target="_blank">source</a>)

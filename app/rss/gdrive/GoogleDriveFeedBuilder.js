@@ -21,6 +21,6 @@ module.exports = async function (feedJSON) {
     else if (type === 'presentation') {
       await GoogleDriveExtractorPresentation(link, feedID)
     }
-    console.log(type, link)
+    // console.log(type, link)
   }
 }

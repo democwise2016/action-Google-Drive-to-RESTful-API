@@ -2,7 +2,10 @@ const ParseRSSID = require('./ParseRSSID.js')
 const GetRSSFeedJSON = require('./GetRSSFeedJSON.js')
 // const SiteInfo = require('./SiteInfo.js')
 const RSSFeedBuilder = require('./builder/RSSFeedBuilder.js')
+
 const GoogleDriveFeedBuilder = require('./gdrive/GoogleDriveFeedBuilder.js')
+const GoogleDriveFeedIndexBuilder = require('./gdrive/GoogleDriveFeedIndexBuilder.js')
+
 const RSSDownloaderItems = require('./items/RSSDownloaderItems.js')
 const getFileListByCreationDate = require('./items/getFileListByCreationDate.js')
 
