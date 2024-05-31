@@ -12,13 +12,63 @@ const path = require('path');
 const extractGoogleFileID = require('../extractGoogleFileID.js')
 const GoogleDriveFeedFolderMaker = require('../GoogleDriveFeedFolderMaker.js')
 
-async function downloadHTML(url, csvFilePath) {
+async function downloadHTML(url, htmlFilePath) {
   const response = await axios.get(url, { responseType: 'stream' });
+
+  const contentDisposition = response.headers['content-disposition'];
+  let filename = false
+
+  if (contentDisposition) {
+    const match = contentDisposition.match(/filename="(.+?)"/);
+    if (match) {
+      filename = match[1];
+
+      if (filename.endsWith('.html')) {
+        filename = filename.slice(0, -5)
+      }
+    }
+  }
+
+
+  // console.log({filename})
+
   return new Promise((resolve, reject) => {
-    const stream = fs.createWriteStream(csvFilePath);
+    const stream = fs.createWriteStream(htmlFilePath);
     response.data.pipe(stream);
-    stream.on('finish', resolve);
+    stream.on('finish', () => {
+      if (filename !== false) {
+        insertTitle(htmlFilePath, filename)
+      }
+      resolve()
+    });
     stream.on('error', reject);
+  });
+}
+
+function insertTitle(filePath, title) {
+  fs.readFile(filePath, 'utf8', (err, data) => {
+    if (err) {
+      console.error('Error reading the file:', err);
+      return;
+    }
+  
+    // Check if <head> tag exists
+    const headTagIndex = data.indexOf('<head>');
+    if (headTagIndex === -1) {
+      console.error('No <head> tag found in the HTML file.');
+      return;
+    }
+  
+    // Insert the <title> tag after <head>
+    const modifiedData = data.slice(0, headTagIndex + 6) + `\n<title>${title}</title>` + data.slice(headTagIndex + 6);
+  
+    fs.writeFile(filePath, modifiedData, 'utf8', (err) => {
+      if (err) {
+        console.error('Error writing the file:', err);
+        return;
+      }
+      // console.log('Successfully inserted <title>HOMEPAGE</title> into the HTML file.');
+    });
   });
 }
 
