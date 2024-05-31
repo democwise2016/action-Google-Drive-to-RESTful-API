@@ -21,7 +21,9 @@ function parsingDataJSON(data, regex, type) {
 }
 
 module.exports = async function (url) {
-  let body = await GetHTML(url)
+  let body = await GetHTML(url, {
+    cacheDay: 0
+  })
 
   let initDataCallback = StringSliceBetween(body, `AF_initDataCallback({key: 'ds:4', hash: '6',`, `, sideChannel: {}});`)
   // let dataJSON
