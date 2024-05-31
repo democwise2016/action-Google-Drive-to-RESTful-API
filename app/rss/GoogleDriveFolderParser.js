@@ -61,8 +61,8 @@ module.exports = async function (url) {
   // })
 
   let items = []
-  items = items.concat(parsingDataJSON(initDataCallback, regexSheet, 'sheet'))
-  items = items.concat(parsingDataJSON(initDataCallback, regexDoc, 'doc'))
+  items = items.concat(parsingDataJSON(initDataCallback, regexSheet, 'spreadsheet'))
+  items = items.concat(parsingDataJSON(initDataCallback, regexDoc, 'document'))
   items = items.concat(parsingDataJSON(initDataCallback, regexPresentation, 'presentation'))
 
   // console.log(result)

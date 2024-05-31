@@ -2,6 +2,11 @@
 const fs = require('fs')
 const path = require('path')
 
+const extractGoogleFileID = require('./extractGoogleFileID.js')
+const GoogleDriveTypeToExt = require('./GoogleDriveTypeToExt.js')
+
+const CONFIG = require('./../../../config.js')
+
 function buildHTML(title, links, feedID) {
   let linksHTML = links.map((link) => {
     return `<p>
@@ -16,7 +21,7 @@ function buildHTML(title, links, feedID) {
     <meta charset="utf-8">
     <title>${title}</title>
     <style>
-    p { font-size: 3rem;}
+    p button { font-size: 3rem;}
     </style>
     <script>
     function copyPlainString (text) {
@@ -60,15 +65,18 @@ function buildHTML(title, links, feedID) {
   </body>
   </html>`
 
-  fs.writeFile(path.join(__dirname, `../../../output/${feedID}.html`), html, 'utf-8')
+  fs.writeFileSync(path.join(__dirname, `../../../output/${feedID}.html`), html, 'utf-8')
 }
 
 module.exports = function (feedJSON) {
   let {title, feedID, items} = feedJSON
 
   let links = items.map(item => {
-    
-    item.link
+
+    let ext = GoogleDriveTypeToExt(item.type)
+    let id = extractGoogleFileID(item.link)
+
+    return `${CONFIG.publicURL}${feedID}/${id}.${ext}`
   })
 
   buildHTML(title, links, feedID)
