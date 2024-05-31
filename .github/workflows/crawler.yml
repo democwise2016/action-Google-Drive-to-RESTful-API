@@ -3,8 +3,8 @@ on:
   push:
   schedule:
     - cron:  "5 22 * * *" # 實際執行時間是這個時間加八小時
-    - cron:  "5 6 * * *" # 實際執行時間是這個時間加八小時
-    - cron:  "5 14 * * *" # 實際執行時間是這個時間加八小時
+    # - cron:  "5 6 * * *" # 實際執行時間是這個時間加八小時
+    # - cron:  "5 14 * * *" # 實際執行時間是這個時間加八小時
   workflow_dispatch:
 permissions:
   contents: write
@@ -141,7 +141,7 @@ jobs:
 
       - name: Main
         run: |
-          docker-compose up
+          docker-compose up --build
 
       # ----------------------------------------------------------------
 
