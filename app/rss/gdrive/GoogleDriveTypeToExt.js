@@ -5,6 +5,6 @@ const ext = {
 }
 
 module.exports = function (type) {
-  console.log(type, ext[type])
+  // console.log(type, ext[type])
   return ext[type]
 }
