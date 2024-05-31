@@ -4,6 +4,8 @@ const GoogleDriveExtractorSpreadsheet = require('./extractor/GoogleDriveExtracto
 const GoogleDriveExtractorDocument = require('./extractor/GoogleDriveExtractorDocument.js')
 const GoogleDriveExtractorPresentation = require('./extractor/GoogleDriveExtractorPresentation.js')
 
+const fs = require('fs')
+
 module.exports = async function (feedJSON) {
   GoogleDriveIndexBuilder(feedJSON)
   let {feedID} = feedJSON
