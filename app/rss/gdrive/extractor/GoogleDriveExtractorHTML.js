@@ -14,7 +14,6 @@ const GoogleDriveFeedFolderMaker = require('../GoogleDriveFeedFolderMaker.js')
 
 // const filenameRegex = /filename\*=['"]?([^;]+)['"]?;?/i;
 const downloadHTML = require('./downloadHTML.js')
-const insertTitle = require('./insertTitle.js')
 
 module.exports = async function (url, feedID, type) {
   let id = extractGoogleFileID(url)

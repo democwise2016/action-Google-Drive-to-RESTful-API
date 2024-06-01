@@ -19,14 +19,11 @@ async function downloadHTML(url, htmlFilePath) {
   let filename = false
 
   if (contentDisposition) {
-    const match = contentDisposition.match(/filename="(.+?)"/);
-    if (match) {
-      filename = match[1];
-
-      if (filename.endsWith('.html')) {
-        filename = filename.slice(0, -5)
-      }
-    }
+    // console.log({contentDisposition})
+    filename = contentDisposition.slice(contentDisposition.lastIndexOf(`UTF-8''`) + 7, -5)
+    // console.log(filename)
+    filename = decodeURIComponent(filename)
+    // console.log(filename) // 15-1. 檢索款目 - 112-2 資訊組織(一).html
   }
 
 
@@ -60,7 +57,7 @@ function insertTitle(filePath, title) {
     }
   
     // Insert the <title> tag after <head>
-    const modifiedData = data.slice(0, headTagIndex + 6) + `\n<title>${title}</title>` + data.slice(headTagIndex + 6);
+    const modifiedData = data.slice(0, headTagIndex + 6) + `\n<title>${title}</title>\n` + data.slice(headTagIndex + 6);
   
     fs.writeFile(filePath, modifiedData, 'utf8', (err) => {
       if (err) {

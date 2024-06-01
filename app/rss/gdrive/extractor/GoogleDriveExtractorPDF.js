@@ -8,24 +8,34 @@ const axios = require('axios');
 const fs = require('fs');
 const csv = require('csv-parser');
 const path = require('path');
+const ShellSpawn = require('./../../../lib/ShellSpawn.js')
 
 const extractGoogleFileID = require('../extractGoogleFileID.js')
 const GoogleDriveFeedFolderMaker = require('../GoogleDriveFeedFolderMaker.js')
 
 // const filenameRegex = /filename\*=['"]?([^;]+)['"]?;?/i;
-const downloadHTML = require('./downloadHTML.js')
-const insertTitle = require('./insertTitle.js')
+const downloadFile = require('./downloadFile.js')
 
 module.exports = async function (url, feedID, type) {
   let id = extractGoogleFileID(url)
   let feedFolder = GoogleDriveFeedFolderMaker(feedID)
-  const csvUrl = `https://docs.google.com/${type}/d/${id}/export/html`;
+  // console.log(url)
 
-  const csvFilePath = path.join(feedFolder, `${id}.html`);
+  // https://drive.google.com/file/d/1u79ebOENe_SKR-agEILn6U7G704CN8xP/view?usp=sharing
+  const pdfUrl = `https://drive.google.com/uc?export=download&id=${id}`;
+
+  const pdfFilePath = path.join(feedFolder, `${id}.pdf`);
+  const htmlFilePath = path.join(feedFolder, `${id}.html`);
 
   try {
-    await downloadHTML(csvUrl, csvFilePath);
+    let filename = await downloadFile(pdfUrl, pdfFilePath);
     // console.log(`JSON saved to ${jsonFilePath}`);
+
+    let command = `/pdf2htmlEX.AppImage ${pdfFilePath} ${htmlFilePath}`
+    await ShellSpawn(command)
+    // java -jar tika-app-2.7.0.jar -h document.pdf > document.html
+
+    fs.unlinkSync(pdfFilePath)
   } catch (error) {
     console.error('Error:', error);
   }

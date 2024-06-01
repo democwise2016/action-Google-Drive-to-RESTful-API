@@ -14,10 +14,24 @@ const GoogleDriveFeedFolderMaker = require('../GoogleDriveFeedFolderMaker.js')
 
 async function downloadCSV(url, csvFilePath) {
   const response = await axios.get(url, { responseType: 'stream' });
+
+  const contentDisposition = response.headers['content-disposition'];
+  let filename = false
+
+  if (contentDisposition) {
+    // console.log({contentDisposition})
+    filename = contentDisposition.slice(contentDisposition.lastIndexOf(`UTF-8''`) + 7, -4)
+    // console.log(filename)
+    filename = decodeURIComponent(filename.trim())
+    // console.log(filename) // 15-1. 檢索款目 - 112-2 資訊組織(一).html
+  }
+
   return new Promise((resolve, reject) => {
     const stream = fs.createWriteStream(csvFilePath);
     response.data.pipe(stream);
-    stream.on('finish', resolve);
+    stream.on('finish', () => {
+      resolve(filename)
+    });
     stream.on('error', reject);
   });
 }
@@ -39,17 +53,69 @@ function csvToJson(csvFilePath, jsonFilePath) {
   });
 }
 
+function csvToHtml(csvFilePath, title, outputPath) {
+  const results = [];
+
+  fs.createReadStream(csvFilePath)
+    .pipe(csv())
+    .on('data', (data) => results.push(data))
+    .on('end', () => {
+      console.log(results)
+
+      // Generate HTML content
+      let html = '<!DOCTYPE html>\n<html>\n<head>\n';
+      html += `  <title>${title}</title>\n`;
+      html += '</head>\n<body>\n';
+      html += `<h1>${title}</h1>\n`;
+      html += '<table border="1">\n';
+
+      // Add table headers
+      if (results[0]) {
+        html += '  <tr>\n';
+        Object.keys(results[0]).forEach(header => {
+          html += `    <th>${header.split('\n').join('<br />')}</th>\n`;
+        });
+        html += '  </tr>\n';
+      }
+        
+
+      // Add data rows
+      results.forEach(row => {
+        html += '  <tr>\n';
+        Object.values(row).forEach(cell => {
+          html += `    <td>${cell.split('\n').join('<br />')}</td>\n`;
+        });
+        html += '  </tr>\n';
+      });
+
+      html += '</table>\n';
+      html += '</body>\n</html>';
+
+      // Write HTML to the specified output path
+      fs.writeFile(outputPath, html, 'utf8', err => {
+        if (err) {
+          console.error('Error writing the HTML file:', err);
+          return;
+        }
+        console.log('HTML file has been generated successfully:', outputPath);
+      });
+    });
+}
+
 module.exports = async function (url, feedID) {
   let id = extractGoogleFileID(url)
   let feedFolder = GoogleDriveFeedFolderMaker(feedID)
   const csvUrl = `https://docs.google.com/spreadsheets/d/${id}/export?format=csv`;
 
   const csvFilePath = path.join(feedFolder, `${id}.csv`);
-  const jsonFilePath = path.join(feedFolder, `${id}.json`);
+  // const jsonFilePath = path.join(feedFolder, `${id}.json`);
+  const htmlFilePath = path.join(feedFolder, `${id}.html`);
 
   try {
-    await downloadCSV(csvUrl, csvFilePath);
-    await csvToJson(csvFilePath, jsonFilePath);
+    let filename = await downloadCSV(csvUrl, csvFilePath);
+    // await csvToJson(csvFilePath, jsonFilePath);
+    // await csvToHTML(csvFilePath, htmlFilePath);
+    csvToHtml(csvFilePath, filename, htmlFilePath)
     fs.unlinkSync(csvFilePath)
     // console.log(`JSON saved to ${jsonFilePath}`);
   } catch (error) {

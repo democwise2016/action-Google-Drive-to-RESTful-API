@@ -71,13 +71,17 @@ function buildHTML(title, links, feedID) {
 module.exports = function (feedJSON) {
   let {title, feedID, items} = feedJSON
 
-  let links = items.map(item => {
+  let links = []
+  if (items) {
+    links = items.map(item => {
 
-    let ext = GoogleDriveTypeToExt(item.type)
-    let id = extractGoogleFileID(item.link)
+      let ext = GoogleDriveTypeToExt(item.type)
+      let id = extractGoogleFileID(item.link)
 
-    return `${CONFIG.publicURL}${feedID}/${id}.${ext}`
-  })
+      return `${CONFIG.publicURL}${feedID}/${id}.${ext}`
+    })
+  }
+    
 
   buildHTML(title, links, feedID)
 }

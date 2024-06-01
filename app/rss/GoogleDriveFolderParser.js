@@ -1,23 +1,39 @@
 const GetHTML = require('./../lib/GetHTML.js');
 const StringSliceBetween = require('./../lib/StringSliceBetween.js');
+const extractGoogleFileID = require('./gdrive/extractGoogleFileID.js')
+
+const initDataCallbackParser = require('./gdrive/initDataCallbackParser.js')
+
 // ?const cheerio = require('cheerio')
 
 // const regex = /https:\/\/drive\.google\.com\/file\/d\/.*?\/view\?usp\\u003ddrive_web/g;
 const regexSheet = /https:\/\/docs\.google\.com\/spreadsheets\/d\/.*?\/edit\?usp\\u003ddrive_web/g;
 const regexDoc = /https:\/\/docs\.google\.com\/document\/d\/.*?\/edit\?usp\\u003ddrive_web/g;
 const regexPresentation = /https:\/\/docs\.google\.com\/presentation\/d\/.*?\/edit\?usp\\u003ddrive_web/g;
+const regexFile = /https:\/\/drive\.google\.com\/file\/d\/.*?\/view\?usp\\u003ddrive_web/g;
 
 function parsingDataJSON(data, regex, type) {
   let matches = data.match(regex);
-  
+  if (!matches) {
+    return []
+  }
   matches = [...new Set(matches)]
-  matches = matches.map(link => {
-    return {
+  let result = []
+  matches.map(link => {
+    // if (excludeIDList.length > 0) {
+    //   let id = extractGoogleFileID(link)
+    //   if (excludeIDList.indexOf(id) > -1) {
+    //     return false
+    //   }
+    // }
+      
+
+    result.push({
       type,
       link: link.replace("\\u003d", "=")
-    }
+    })
   })
-  return matches
+  return result
 }
 
 module.exports = async function (url) {
@@ -49,7 +65,7 @@ module.exports = async function (url) {
   //   }
   // ]
 
-  // console.log(initDataCallback)
+  // console.log(initDataCallback); throw new Error('stop')
   // let matchesSheet = initDataCallback.match(regexSheet);
   
   // matchesSheet = matchesSheet.map(link => link.replace("\\u003d", "="))
@@ -67,7 +83,20 @@ module.exports = async function (url) {
   items = items.concat(parsingDataJSON(initDataCallback, regexDoc, 'document'))
   items = items.concat(parsingDataJSON(initDataCallback, regexPresentation, 'presentation'))
 
-  // console.log(result)
+  // console.log(items)
+
+  // let excludeIDList = items.map(item => {
+  //   let id = extractGoogleFileID(item.link)
+  //   return id
+  // })
+
+  // console.log(excludeIDList)
+
+  items = items.concat(initDataCallbackParser(initDataCallback, 'text/html', 'html'))
+
+  // console.log(items);
+
+  // console.log(items); throw new Error('stop')
 
   return {
     items
