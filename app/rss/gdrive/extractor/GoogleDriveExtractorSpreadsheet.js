@@ -60,7 +60,7 @@ function csvToHtml(csvFilePath, title, outputPath) {
     .pipe(csv())
     .on('data', (data) => results.push(data))
     .on('end', () => {
-      console.log(results)
+      // console.log(results)
 
       // Generate HTML content
       let html = '<!DOCTYPE html>\n<html>\n<head>\n';
