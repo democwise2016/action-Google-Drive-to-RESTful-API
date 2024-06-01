@@ -95,7 +95,7 @@ jobs:
 
       - name: Clean Cache
         run: |
-          rm -rf ./cache/*.db
+          rm -rf ./cache/*.sqlite
           rm -rf ./cache/*.txt
       #     docker rmi -f $(docker images -aq)
       #     docker network prune -f
