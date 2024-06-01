@@ -1,6 +1,6 @@
 const ext = {
   'document': 'html',
-  'spreadsheet': 'json',
+  'spreadsheet': 'html',
   'presentation': 'html',
   'html': 'html',
   'pdf': 'pdf'
