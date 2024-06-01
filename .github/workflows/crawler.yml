@@ -93,10 +93,10 @@ jobs:
       #   run: |
       #     rm -f ./output/funtop-script.google.com-1ce39e89c3.rss
 
-      # - name: Clean Cache
-      #   run: |
-      #     rm -rf ./cache/*.db
-      #     rm -rf ./cache/*.txt
+      - name: Clean Cache
+        run: |
+          rm -rf ./cache/*.db
+          rm -rf ./cache/*.txt
       #     docker rmi -f $(docker images -aq)
       #     docker network prune -f
       #     docker volume prune -f
