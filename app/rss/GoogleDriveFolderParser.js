@@ -38,7 +38,7 @@ function parsingDataJSON(data, regex, type) {
 
 module.exports = async function (url) {
   let body = await GetHTML(url, {
-    cacheDay: 0
+    cacheDay: 0.0001
   })
 
   let initDataCallback = StringSliceBetween(body, `AF_initDataCallback({key: 'ds:4', hash: '6',`, `, sideChannel: {}});`)
@@ -65,7 +65,7 @@ module.exports = async function (url) {
   //   }
   // ]
 
-  // console.log(initDataCallback); throw new Error('stop')
+  // console.log(initDataCallback);
   // let matchesSheet = initDataCallback.match(regexSheet);
   
   // matchesSheet = matchesSheet.map(link => link.replace("\\u003d", "="))
@@ -96,7 +96,8 @@ module.exports = async function (url) {
 
   // console.log(items);
 
-  // console.log(items); throw new Error('stop')
+  // console.log(items); 
+  // throw new Error('stop')
 
   return {
     items
