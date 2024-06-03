@@ -36,6 +36,8 @@ module.exports = async function (url, feedID, type) {
     // java -jar tika-app-2.7.0.jar -h document.pdf > document.html
 
     fs.unlinkSync(pdfFilePath)
+
+    return path.basename(htmlFilePath)
   } catch (error) {
     console.error('Error:', error);
   }

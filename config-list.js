@@ -2,6 +2,14 @@ const ItemFilters = require('./app/config/ItemFilters.js')
 
 let feedList = [
   {
+    title: 'action-Google-Drive-to-RESTful-API',
+    feedID: 'action-Google-Drive-to-RESTful-API',
+    feedURL: 'https://drive.google.com/drive/folders/1ORpMi_iRR4jxHqfWtwhVfcCFp9ID9EOH?usp=drive_link',
+    itemFilters: [
+      ItemFilters['gdrive'].ItemFilterGoogleDriveFolder,
+    ],
+  },
+  {
     title: 'pulipulichen-github-public',
     feedID: 'pulipulichen-github-public',
     feedURL: 'https://drive.google.com/drive/folders/12N24RMeQ3bS30_veANE5WP216z3KCLqL',

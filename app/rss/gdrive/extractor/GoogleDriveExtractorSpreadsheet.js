@@ -117,6 +117,8 @@ module.exports = async function (url, feedID) {
     // await csvToHTML(csvFilePath, htmlFilePath);
     csvToHtml(csvFilePath, filename, htmlFilePath)
     fs.unlinkSync(csvFilePath)
+
+    return path.basename(htmlFilePath)
     // console.log(`JSON saved to ${jsonFilePath}`);
   } catch (error) {
     console.error('Error:', error);

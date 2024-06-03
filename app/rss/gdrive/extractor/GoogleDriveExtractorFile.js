@@ -37,6 +37,8 @@ module.exports = async function (url, feedID, ext = 'html') {
 
     // fs.unlinkSync(pdfFilePath)
     await downloadFile(fileUrl, htmlFilePath);
+
+    return path.basename(htmlFilePath)
   } catch (error) {
     console.error('Error:', error);
   }

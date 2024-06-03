@@ -25,6 +25,8 @@ module.exports = async function (url, feedID, type) {
   try {
     await downloadHTML(csvUrl, csvFilePath);
     // console.log(`JSON saved to ${jsonFilePath}`);
+
+    return path.basename(csvFilePath)
   } catch (error) {
     console.error('Error:', error);
   }
