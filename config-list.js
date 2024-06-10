@@ -17,6 +17,14 @@ let feedList = [
       ItemFilters['gdrive'].ItemFilterGoogleDriveFolder,
     ],
   },
+  {
+    title: '修改論文的希希助教 public',
+    feedID: 'paper-revising-public',
+    feedURL: 'https://drive.google.com/drive/folders/1P3dbQ-CHNCvHAhQPZO61aWxe4ID4ilcC?usp=drive_link',
+    itemFilters: [
+      ItemFilters['gdrive'].ItemFilterGoogleDriveFolder,
+    ],
+  },
 ]
 // ----------------------------------------------------------------
 
