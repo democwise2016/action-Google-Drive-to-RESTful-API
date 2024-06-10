@@ -73,12 +73,20 @@ module.exports = function (feedJSON) {
 
   let links = []
   if (items) {
-    links = items.map(item => {
+    items.map(item => {
 
       let ext = GoogleDriveTypeToExt(item.type)
       let id = extractGoogleFileID(item.link)
 
-      return `${CONFIG.publicURL}${feedID}/${id}.${ext}`
+      // return `${CONFIG.publicURL}${feedID}/${id}.${ext}`
+      if (typeof(ext) === 'string') {
+        links.push(`${CONFIG.publicURL}${feedID}/${id}.${ext}`)
+      }
+      else if (Array.isArray(ext)) {
+        ext.forEach(extItem => {
+          links.push(`${CONFIG.publicURL}${feedID}/${id}.${extItem}`)
+        })
+      }
     })
   }
     

@@ -32,16 +32,16 @@ module.exports = async function (feedJSON) {
 
     // console.log(type, link)
     if (type === 'spreadsheet') {
-      downloadedFiles.push(await GoogleDriveExtractorSpreadsheet(link, feedID))
+      downloadedFiles = downloadedFiles.concat(await GoogleDriveExtractorSpreadsheet(link, feedID))
     }
     else if (type === 'document') {
-      downloadedFiles.push(await GoogleDriveExtractorHTML(link, feedID, type))
+      downloadedFiles = downloadedFiles.concat(await GoogleDriveExtractorHTML(link, feedID, type))
     }
     else if (type === 'presentation') {
-      downloadedFiles.push(await GoogleDriveExtractorHTML(link, feedID, type))
+      downloadedFiles = downloadedFiles.concat(await GoogleDriveExtractorHTML(link, feedID, type))
     }
     else if (type === 'html') {
-      downloadedFiles.push(await GoogleDriveExtractorFile(link, feedID, 'html'))
+      downloadedFiles = downloadedFiles.concat(await GoogleDriveExtractorFile(link, feedID, 'html'))
     }
     // console.log(type, link)
   }
