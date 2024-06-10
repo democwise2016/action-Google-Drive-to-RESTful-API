@@ -64,7 +64,8 @@ function csvToHtml(csvFilePath, title, outputPath) {
         // console.log(results)
 
         // Generate HTML content
-        let html = '<!DOCTYPE html>\n<html>\n<head>\n';
+        let html = '<!DOCTYPE html>\n<html lang="en">\n<head>\n';
+        html += `<meta charset="UTF-8">\n`;
         html += `  <title>${title}</title>\n`;
         html += '</head>\n<body>\n';
         html += `<h1>${title}</h1>\n`;

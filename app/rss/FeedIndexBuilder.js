@@ -12,7 +12,7 @@ module.exports = function () {
   })
 
   let head = `<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>ACTION-RSS-Fulltext</title>
