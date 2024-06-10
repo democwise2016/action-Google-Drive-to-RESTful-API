@@ -25,6 +25,14 @@ let feedList = [
       ItemFilters['gdrive'].ItemFilterGoogleDriveFolder,
     ],
   },
+  {
+    title: '規劃演講標題的希希助教 public',
+    feedID: 'speech-titling-public',
+    feedURL: 'https://drive.google.com/drive/folders/1k7Wrc5yx6JRgCDnihRvZgP0Llc-qc_HU?usp=drive_link',
+    itemFilters: [
+      ItemFilters['gdrive'].ItemFilterGoogleDriveFolder,
+    ],
+  },
 ]
 // ----------------------------------------------------------------
 
