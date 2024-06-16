@@ -33,6 +33,14 @@ let feedList = [
       ItemFilters['gdrive'].ItemFilterGoogleDriveFolder,
     ],
   },
+  {
+    title: '製作中文投影片的希希助教 public',
+    feedID: 'slide-chinese-public',
+    feedURL: 'https://drive.google.com/drive/folders/12GRclYH4V1eETAupZmia0NumQf8UlV-K?usp=sharing',
+    itemFilters: [
+      ItemFilters['gdrive'].ItemFilterGoogleDriveFolder,
+    ],
+  },
 ]
 // ----------------------------------------------------------------
 
