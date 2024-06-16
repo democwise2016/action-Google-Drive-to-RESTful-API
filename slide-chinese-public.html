@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>製作中文投影片的希希助教 public</title>
+    <style>
+    p button { font-size: 3rem;}
+    </style>
+    <script>
+    function copyPlainString (text) {
+      if (!navigator.clipboard) {
+        fallbackCopyTextToClipboard(text);
+        return;
+      }
+      navigator.clipboard.writeText(text).then(function () {
+      }, function (err) {
+      });
+    }
+
+    function fallbackCopyTextToClipboard(text) {
+      var textArea = document.createElement("textarea");
+      textArea.value = text;
+  
+      // Avoid scrolling to bottom
+      textArea.style.top = "0";
+      textArea.style.left = "0";
+      textArea.style.position = "fixed";
+  
+      document.body.appendChild(textArea);
+      textArea.focus();
+      textArea.select();
+  
+      try {
+        var successful = document.execCommand('copy');
+        var msg = successful ? 'successful' : 'unsuccessful';
+        console.log('Fallback: Copying text command was ' + msg);
+      } catch (err) {
+        console.error('Fallback: Oops, unable to copy', err);
+      }
+  
+      document.body.removeChild(textArea);
+    }
+    </script>
+  </head>
+  <body>
+    <h1>製作中文投影片的希希助教 public</h1>
+    <p>
+      <button type="button" onclick="copyPlainString('https://democwise2016.github.io/action-Google-Drive-to-RESTful-API/slide-chinese-public/1x9vK9E7XdnW6hqfvz4NdQ0BEkq3Qf1vbnf7XTI1HDI4.html'); this.style.color ='red'">COPY</button>
+      <a href="https://democwise2016.github.io/action-Google-Drive-to-RESTful-API/slide-chinese-public/1x9vK9E7XdnW6hqfvz4NdQ0BEkq3Qf1vbnf7XTI1HDI4.html" target="_blank">https://democwise2016.github.io/action-Google-Drive-to-RESTful-API/slide-chinese-public/1x9vK9E7XdnW6hqfvz4NdQ0BEkq3Qf1vbnf7XTI1HDI4.html</a>
+    </p>
+<p>
+      <button type="button" onclick="copyPlainString('https://democwise2016.github.io/action-Google-Drive-to-RESTful-API/slide-chinese-public/1x9vK9E7XdnW6hqfvz4NdQ0BEkq3Qf1vbnf7XTI1HDI4.json'); this.style.color ='red'">COPY</button>
+      <a href="https://democwise2016.github.io/action-Google-Drive-to-RESTful-API/slide-chinese-public/1x9vK9E7XdnW6hqfvz4NdQ0BEkq3Qf1vbnf7XTI1HDI4.json" target="_blank">https://democwise2016.github.io/action-Google-Drive-to-RESTful-API/slide-chinese-public/1x9vK9E7XdnW6hqfvz4NdQ0BEkq3Qf1vbnf7XTI1HDI4.json</a>
+    </p>
+  </body>
+  </html>
