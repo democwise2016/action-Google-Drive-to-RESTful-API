@@ -1,5 +1,21 @@
 [
   {
+    "url": "https://github.com/pulipulichen/PWA-Blog-Cover-Builder",
+    "project_name": "",
+    "description_short": "「布丁布丁吃什麼？」部落格封面的製作工具",
+    "description_en_us": "A tool for creating the cover of the Pulipuli Chen's blog. You can upload images, set tags, and add text descriptions, making it easy to create cover images for blogs and social media.",
+    "description_zh_tw": "「布丁布丁吃什麼？」部落格封面的製作工具。可以上傳圖片、設定標籤和文字敘述，讓人方便製作能用於部落格和社群媒體的封面圖片。",
+    "techniques": "- **Progressive Web App (PWA)**: 可安裝在電腦或手機上的網頁架構設計。\n- **Vue.js**: MVVM網頁框架。\n- **Sementic UI**: 現代化RWD介面。\n- **dom-to-image-more**: 將網頁元素轉換成圖片。"
+  },
+  {
+    "url": "https://github.com/pulipulichen/HTML-Lag-Sequential-Analysis",
+    "project_name": "HTML-Lag-Sequential-Analysis",
+    "description_short": "滯後序列分析的網頁版工具",
+    "description_en_us": "This is a specialized web tool for lag sequential analysis. It primarily assists researchers in analyzing event-coded sequence data, followed by conducting lag sequential analysis tests. The test results are then presented in tables and social network diagrams, providing researchers with the necessary information to write reports on lag sequential analysis.",
+    "description_zh_tw": "這是一個專門用於滯後序列分析的網頁工具。它主要是幫助研究者將事件編碼的序列資料進行轉換、統計，並進行滯後序列分析的檢定。檢定結果再以表格和社會網路圖呈現，以便提供研究者撰寫滯後序列分析的報告結果。",
+    "techniques": "- **Vue.js**: MVVM網頁框架。\n- **Sementic UI**: 現代化RWD介面。\n- **jsPlumb**: 資訊視覺化的JavaScript函式庫。"
+  },
+  {
     "url": "https://github.com/pulipulichen/PWA-Now-Loading",
     "project_name": "PWA-Now-Loading",
     "description_short": "等待過程中可顯示時鐘和自訂文字的畫面",
