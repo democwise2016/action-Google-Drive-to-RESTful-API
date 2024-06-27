@@ -41,6 +41,14 @@ let feedList = [
       ItemFilters['gdrive'].ItemFilterGoogleDriveFolder,
     ],
   },
+  {
+    title: '翻譯成英文的希希助教 public',
+    feedID: 'trans-to-english-public',
+    feedURL: 'https://drive.google.com/drive/folders/1wOiJnffGxrMmZ0kd9AhdgCaPgqiDAgNq?usp=drive_link',
+    itemFilters: [
+      ItemFilters['gdrive'].ItemFilterGoogleDriveFolder,
+    ],
+  },
 ]
 // ----------------------------------------------------------------
 
