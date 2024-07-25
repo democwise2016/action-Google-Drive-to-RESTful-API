@@ -4,6 +4,7 @@ const path = require('path')
 
 const extractGoogleFileID = require('./extractGoogleFileID.js')
 const GoogleDriveTypeToExt = require('./GoogleDriveTypeToExt.js')
+const GoogleDriveFeedFolderMaker = require('./GoogleDriveFeedFolderMaker.js')
 
 const CONFIG = require('./../../../config.js')
 
@@ -85,6 +86,19 @@ module.exports = function (feedJSON) {
       else if (Array.isArray(ext)) {
         ext.forEach(extItem => {
           links.push(`${CONFIG.publicURL}${feedID}/${id}.${extItem}`)
+
+          if (extItem === 'txt') {
+            // 檢查看看有沒有這個檔案
+            let idx = 0
+            let feedFolder = GoogleDriveFeedFolderMaker(feedID)
+            let filePath = path.join(feedFolder, `${id}_${idx}.txt`)
+            console.log(filePath)
+            while (fs.existsSync(filePath)) {
+              links.push(`${CONFIG.publicURL}${feedID}/${id}_${idx}.${extItem}`)
+              idx++
+              filePath = path.join(feedFolder, `${id}_${idx}.txt`)
+            }
+          }
         })
       }
     })

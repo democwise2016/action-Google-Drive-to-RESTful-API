@@ -56,4 +56,6 @@ module.exports = async function (feedJSON) {
       fs.unlinkSync(fileToDelete)
     }
   }
+
+  return downloadedFiles
 }

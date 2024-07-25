@@ -76,7 +76,7 @@ module.exports = async function (feedItem = {}) {
     // console.log([`[RSSDownloader] RSS build`, feedFilename, RSSBuildCounter, (new Date().toISOString())].join('\t'))
   }
   else if (parserType === 'gdrive') {
-    await GoogleDriveFeedBuilder(feedJSON)
+    return await GoogleDriveFeedBuilder(feedJSON)
   }  
 
   // await ShellSpawn([`chmod`, `-R`, `777`, `/output/*`])
