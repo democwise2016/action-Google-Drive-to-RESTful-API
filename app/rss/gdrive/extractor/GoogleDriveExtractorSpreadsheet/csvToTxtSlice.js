@@ -27,7 +27,7 @@ function csvToTxtSlice(csvFilePath, feedFolder, id) {
             let output = chunks[idx].map(item => {
               return Object.keys(item).map((key) => {
                 return `${key}: ${item[key]}` 
-              }).join('\n')
+              }).join(' ##\n ')
             }).join('\n\n####\n\n')
 
             const txtFilePath = path.join(feedFolder, `${id}_${idx}.txt`);
