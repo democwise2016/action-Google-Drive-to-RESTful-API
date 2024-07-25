@@ -1,37 +1,37 @@
-待翻譯的文字: 滯後序列分析
-翻譯成這個文字: Lag Sequential Analysis
+待翻譯的文字: 滯後序列分析 ##
+ 翻譯成這個文字: Lag Sequential Analysis
 
 ####
 
-待翻譯的文字: 檢索增強生成
-翻譯成這個文字: Retrieval-Augmented Generation
+待翻譯的文字: 檢索增強生成 ##
+ 翻譯成這個文字: Retrieval-Augmented Generation
 
 ####
 
-待翻譯的文字: 中華民國圖書館學會
-翻譯成這個文字: Library Association of the Republic of China (Taiwan)
+待翻譯的文字: 中華民國圖書館學會 ##
+ 翻譯成這個文字: Library Association of the Republic of China (Taiwan)
 
 ####
 
-待翻譯的文字: 政治大學
-翻譯成這個文字: Chengchi University
+待翻譯的文字: 政治大學 ##
+ 翻譯成這個文字: Chengchi University
 
 ####
 
-待翻譯的文字: 開放文件格式
-翻譯成這個文字: Open Document Format (ODF)
+待翻譯的文字: 開放文件格式 ##
+ 翻譯成這個文字: Open Document Format (ODF)
 
 ####
 
-待翻譯的文字: 希希
-翻譯成這個文字: Sissi
+待翻譯的文字: 希希 ##
+ 翻譯成這個文字: Sissi
 
 ####
 
-待翻譯的文字: 希希助教
-翻譯成這個文字: TA. Sissi
+待翻譯的文字: 希希助教 ##
+ 翻譯成這個文字: TA. Sissi
 
 ####
 
-待翻譯的文字: 布丁布丁吃什麼？
-翻譯成這個文字: Pulipuli’s Blog
+待翻譯的文字: 布丁布丁吃什麼？ ##
+ 翻譯成這個文字: Pulipuli’s Blog
