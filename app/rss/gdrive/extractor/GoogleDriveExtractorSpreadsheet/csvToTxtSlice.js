@@ -24,7 +24,7 @@ function csvToTxtSlice(csvFilePath, feedFolder, id) {
           let chunks = splitArrayIntoChunks(results, 100)
 
           for (let idx = 0; idx < chunks.length; idx++) {
-            let output = results.map(item => {
+            let output = chunks[idx].map(item => {
               return Object.keys(item).map((key) => {
                 return `${key}: ${item[key]}` 
               }).join('\n')
