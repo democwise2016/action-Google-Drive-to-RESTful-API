@@ -1,0 +1,235 @@
+url: https://github.com/pulipulichen/PWA-Blog-Cover-Builder
+project_name: PWA-Blog-Cover-Builder
+description_short: 「布丁布丁吃什麼？」部落格封面的製作工具
+description_en_us: A tool for creating the cover of the Pulipuli Chen's blog. You can upload images, set tags, and add text descriptions, making it easy to create cover images for blogs and social media.
+description_zh_tw: 「布丁布丁吃什麼？」部落格封面的製作工具。可以上傳圖片、設定標籤和文字敘述，讓人方便製作能用於部落格和社群媒體的封面圖片。
+techniques: - **Progressive Web App (PWA)**: 可安裝在電腦或手機上的網頁架構設計。
+- **Vue.js**: MVVM網頁框架。
+- **Sementic UI**: 現代化RWD介面。
+- **dom-to-image-more**: 將網頁元素轉換成圖片。
+
+####
+
+url: https://github.com/pulipulichen/HTML-Lag-Sequential-Analysis
+project_name: HTML-Lag-Sequential-Analysis
+description_short: 滯後序列分析的網頁版工具
+description_en_us: This is a specialized web tool for lag sequential analysis. It primarily assists researchers in analyzing event-coded sequence data, followed by conducting lag sequential analysis tests. The test results are then presented in tables and social network diagrams, providing researchers with the necessary information to write reports on lag sequential analysis.
+description_zh_tw: 這是一個專門用於滯後序列分析的網頁工具。它主要是幫助研究者將事件編碼的序列資料進行轉換、統計，並進行滯後序列分析的檢定。檢定結果再以表格和社會網路圖呈現，以便提供研究者撰寫滯後序列分析的報告結果。
+techniques: - **Vue.js**: MVVM網頁框架。
+- **Sementic UI**: 現代化RWD介面。
+- **jsPlumb**: 資訊視覺化的JavaScript函式庫。
+
+####
+
+url: https://github.com/pulipulichen/PWA-Now-Loading
+project_name: PWA-Now-Loading
+description_short: 等待過程中可顯示時鐘和自訂文字的畫面
+description_en_us: A PWA application that displays a clock and custom text during a waiting period. Users can set the text content displayed during the waiting period according to their needs. This application is developed as a Progressive Web App (PWA) and can be accessed and used directly through a browser.
+description_zh_tw: 這是一個可以在等待過程中顯示時鐘和自訂文字的應用程式。使用者可以根據自己的需求設定在等待過程中顯示的文字內容。這個應用程式以PWA（漸進式網頁應用程式）的形式開發，可用瀏覽器直接開啟並使用。
+techniques: - **Progressive Web App (PWA)**: 可安裝在電腦或手機上的網頁架構設計。
+- **Vue.js**: MVVM網頁框架。
+- **Sementic UI**: 現代化RWD介面。
+
+####
+
+url: https://github.com/pulipulichen/docker-web-Voyant-Tools
+project_name: docker-web-Voyant-Tools
+description_short: 架設Voyant Server來實作文本探勘
+description_en_us: A web server based on Docker technology to host Voyant Server for text analysis and visualization.
+description_zh_tw: 基於 Docker 技術的網頁伺服器，用於架設 Voyant Server ，可進行文本分析和可視化。
+techniques: - **Docker**: 以容器化部署，確保應用程式具備可移植性和管理便利性。
+- **Voyant Tools**: 文本探勘與分析的網頁工具。 http://www.voyant-tools.org/docs/#!/guide/about
+- **Text Analysis**: 文本探勘技術
+- **Data Visualization**: 資訊視覺化技術。
+- **Java**: 資料分析的程式。
+
+####
+
+url: https://github.com/pulipulichen/PWA-iClass-Matching-Pairs-Quiz-Builder
+project_name: PWA-iClass-Matching-Pairs-Quiz-Builder
+description_short: 用於建立iClass配對型測驗的網頁工具
+description_en_us: Designed specifically for creating matching pair quizzes, this web tool can convert pairs of terms and definitions into randomly ordered matching questions, tailored for use in iClass (TronClass) exams and follow-up quizzes.
+description_zh_tw: 專門設計用於建立配對測驗的網頁工具。能將名詞與解釋的配對轉換成隨機排序的配對題，專門為了iClass (TronClass)的測驗跟隨堂測驗使用。
+techniques: - **Progressive Web App (PWA)**: 可安裝在電腦或手機上的網頁架構設計。
+- **Vue.js**: MVVM網頁框架。
+- **Sementic UI**: 現代化RWD介面。
+
+####
+
+url: https://github.com/pulipulichen/PWA-Git-Conflict-Resolver
+project_name: PWA-Git-Conflict-Resolver
+description_short: 用於解決Git衝突的網頁工具
+description_en_us: A progressive web application designed to resolve conflicts in Git version control. As a Progressive Web App (PWA), it allows users to seamlessly use it on any device, providing an intuitive interface to assist in resolving code merge conflicts.
+description_zh_tw: 專門設計用於解決Git版本控制中衝突問題的PWA網頁工具。此應用程式以PWA（進階Web應用程式）的形式提供，讓使用者可以在任何裝置上流暢使用，並且提供簡單的介面來輔助解決代碼合併衝突。
+techniques: - **Progressive Web App (PWA)**: 可安裝在電腦或手機上的網頁架構設計。
+- **Vue.js**: MVVM的控制框架。
+- **Semantic UI**: 現代網頁的RWD樣式框架。
+
+####
+
+url: https://github.com/pulipulichen/docker-web-MEME-PAM-Explorer
+project_name: docker-web-MEME-PAM-Explorer
+description_short: 呈現來自docker-app-MEME-PAM-Analyzer分析結果的伺服器
+description_en_us: A Node.js server application deployed using Docker, designed to present data from docker-app-MEME-PAM-Analyzer. Users can easily browse meme analysis results.
+description_zh_tw: 一個使用Docker部屬的Node.js伺服器，可以呈現來自docker-app-MEME-PAM-Analyzer的分析結果，讓使用者可以方便地瀏覽。
+techniques: - **Docker**: 提供容器化部署，確保應用程式的可移植性和管理便利性。
+- **Node.js**: 用於構建網頁的伺服器和處理後端邏輯。
+- **HAPI.js**: Node.js的Web應用框架，用於建立伺服器端API和路由。
+- **Semantic UI**: 用於前端的資料展示和互動設計。
+
+####
+
+url: https://github.com/pulipulichen/docker-app-MEME-PAM-Analyzer
+project_name: docker-app-MEME-PAM-Analyzer
+description_short: 分析網路迷因圖片的應用程式
+description_en_us: An application designed for analyzing meme images, utilizing deep learning techniques to analyze the visual and semantic representation of meme images, and employing clustering algorithms to organize these memes.
+description_zh_tw: docker-app-MEME-PAM-Analyzer 是一個專為分析網路迷因圖片的應用程式，利用深度學習技術分析迷因圖片的視覺和語義表徵，並通過分群演算法來組織迷因圖片。
+techniques: - **Docker**: 以容器化部署，確保應用程式具備可移植性和管理便利性。
+- **Deep Learning**: 使用深度學習技術來分析迷因圖片的視覺和語義表徵。
+- **Clustering Algorithms**: 使用K-Means、手肘法、CK指標等分群演算法來組織迷因圖片。
+- **Python & Jupyter Lab**: 資料分析的程式。
+
+####
+
+url: https://github.com/pulipulichen/jieba-js
+project_name: jieba-js
+description_short: 學習中文自然語言處理過程的實驗工具
+description_en_us: An experimental webpage for observing Chinese natural language processing. It demonstrates the processes of decomposition, transformation, deletion, and model building. Written in JavaScript, it can be executed in any browser. The webpage can be integrated with other tools to create word clouds, perform text statistical analysis, conduct LDA topic modeling, and utilize machine learning classifiers.
+description_zh_tw: 觀察中文自然語言處理過程的實驗網頁。可瞭解分解、轉換、刪除、建立模型的過程。用JavaScript撰寫，只要有瀏覽器即可執行。可搭配其他工具來繪製文字雲、文本統計分析、LDA主題塑模、以及機器學習分類器。
+techniques: JavaScript
+Vue: MVVM框架
+Jieba-JS: 斷詞演算法
+Semantic UI: CSS框架
+
+####
+
+url: https://github.com/pulipulichen/HTML5-Speech-to-Text
+project_name: HTML5-Speech-to-Text
+description_short: 線上檔案語音轉文字字幕
+description_en_us: This is an online speech recognition tool implemented entirely in pure JavaScript. It utilizes the browser's built-in Web Speech API to convert audio captured by the microphone into text and combines it with time segments to create subtitles.
+description_zh_tw: 純JavaScript實作的線上語音識別工具。它利用瀏覽器內建的Web Speech API，將麥克風收到的聲音轉換成文字，並搭配時間片段組合成字幕。
+techniques: JavaScript
+Web Speech API: 瀏覽器內建的語音識別API。
+
+####
+
+url: https://github.com/pulipulichen/ocs
+project_name: ocs
+description_short: 開放原始碼研討會管理系統
+description_en_us: An open-source conference management system with features for conference registration, paper submission, and review processes.
+description_zh_tw: 開放原始碼的研討會管理系統，具備註冊、投稿與審查的功能。
+techniques: PHP
+Bootstrap: CSS框架
+jQuery.Survey: 線上問卷功能
+
+####
+
+url: https://github.com/pulipulichen/dspace-dlll
+project_name: dspace-dlll
+description_short: 數位典藏系統
+description_en_us: A digital archive system modified from DSpace 1.5.0. It features many customized metadata forms and enhanced web browsing functionalities.
+description_zh_tw: 基於DSpace 1.5.0修改的數位典藏系統。特色是增加了許多客製化後設資料表單跟網頁瀏覽的功能。
+techniques: Java: DSpace的核心技術。
+PostgreSQL: DSpace資料庫技術。
+jQuery & jQuery UI: 前端展示介面
+
+####
+
+url: https://github.com/pulipulichen/zentyal-dlll
+project_name: zentyal-dlll
+description_short: 客製化軟體路由器Zentyal-DLLL
+description_en_us: Based on the Zentyal router operating system, the web management interface has been modified to focus on DNS, DHCP, NAT, Reverse Proxy, and knowledge management functions.
+description_zh_tw: 基於Zentyal路由器作業系統，修改網頁管理介面，讓它專注於DNS、DHCP、NAT、Reverse Proxy以及知識管理的功能。
+techniques: Perl
+Bind 8：DNS伺服器
+Pound：反向代理伺服器
+MooseFS：分散式檔案系統
+Ubuntu：作業系統
+
+####
+
+url: https://github.com/pulipulichen/docker-HTTPS-Reverse-Proxy
+project_name: docker-HTTPS-Reverse-Proxy
+description_short: 以Nginx反向代理伺服器構成的Docker伺服器
+description_en_us: This is a Docker server configured with an Nginx reverse proxy server, which includes built-in functionality to automatically apply for certificates from Let's Encrypt, allowing it to add HTTPS protocol to backend servers.
+description_zh_tw: 這是一個以Nginx反向代理伺服器構成的Docker伺服器，並且內建了自動跟Let's Encrypt申請憑證的功能，能夠為後端伺服器加上HTTPS協定。
+techniques: - **Docker**: 虛擬化技術
+- **Nginx**: 網頁伺服器兼反向代理伺服器
+- **certbot**: 憑證申請工具
+
+####
+
+url: https://github.com/pulipulichen/voc4fun-client
+project_name: voc4fun-client
+description_short: 全民樂單字 PhoneGap端程式碼
+description_en_us: A mobile application featuring a flashcard learning system with a self-regulating learning mechanism. It dynamically adjusts daily goals based on the learner's progress.
+description_zh_tw: 抽認卡學習模式的手機應用程式。具備自律學習機制，能夠根據學習者的進度動態調整每日目標。
+techniques: PhoneGap: 基於HTML的應用程式封裝工具。
+OnsenUI & Bootstrap: 適合手機應用程式的CSS框架。
+AngularJS: MVVM框架。
+
+####
+
+url: https://github.com/pulipulichen/PWA-Todo-List
+project_name: PWA-Todo-List
+description_short: 待辦事項應用程式
+description_en_us: A to-do list that can save files and only stores data in the browser, allowing for offline use. It is suitable for integration with other systems.
+description_zh_tw: 可以保存檔案的待辦事項。資料只保存在瀏覽器中，離線也可以使用。適合跟其他系統整合搭配。
+techniques: JavaScript
+PWA: Progressive Web App 漸進式網路應用程式
+FileSystem API: HTML5支援的檔案管理系統。把檔案存放在瀏覽器中。
+
+####
+
+url: https://github.com/pulipulichen/voc4fun-server
+project_name: voc4fun-server
+description_short: 全民樂單字 伺服器端版本
+description_en_us: A mobile application featuring a flashcard learning system with a self-regulating learning mechanism. It dynamically adjusts daily goals based on the learner's progress.
+description_zh_tw: 抽認卡學習模式的手機應用程式。具備自律學習機制，能夠根據學習者的進度動態調整每日目標。
+techniques: PHP
+PostgreSQL
+RedBeanPHP: 不需首先設定表格的資料庫ORM
+
+####
+
+url: https://github.com/pulipulichen/docker-app-Image-Background-Remover
+project_name: docker-app-Image-Background-Remover
+description_short: 移除圖片背景
+description_en_us: A tool to remove backgrounds and transparent margins from images.
+description_zh_tw: 用來幫圖片移除背景和去除空白邊緣的工具。
+techniques: Rembg: A Python module to remove backgrounds from images based on AI models.
+ImageMagick: Trim the margin of the image.
+Node.js and Python: File processing.
+
+####
+
+url: https://github.com/pulipulichen/crawler-Course-Example
+project_name: crawler-Course-Example
+description_short: 自動排程網路爬蟲教材
+description_en_us: A fully automated solution for web scraping. It includes automatic scheduling and triggering through GitHub Actions, data collection using Node.js's Puppeteer, and data preservation on GitHub Pages for use by others.
+description_zh_tw: 一套網路爬蟲的全自動解決方案。包含了透過GitHub Action自動排程啟動、使用Node.js的Puppet蒐集資料、以GitHub Pages保存資料供其他人使用。
+techniques: Node.js
+GitHub Action: 自動排程執行的DevOps方案。
+Puppeteer: Node.js的瀏覽器模擬工具。
+
+####
+
+url: https://github.com/pulipulichen/PWA-Vocabulary-Helper
+project_name: PWA-Vocabulary-Helper
+description_short: 單字查詢器
+description_en_us: To build a list of vocabularies with phonetic symbols and translations.
+description_zh_tw: 將單字列表加上音標和翻譯。
+techniques: Vue.js
+Google Apps Scripts
+
+####
+
+url: https://github.com/pulipulichen/PWA-Sign-in-Sheet-Generator
+project_name: PWA-Sign-in-Sheet-Generator
+description_short: 簽到表產生器
+description_en_us: This is a progressive web application that generates sign-in sheets. Users can customize the header, input list information, and specify the layout of the sign-in sheet.
+description_zh_tw: 一個用來產生簽到表的PWA程式。使用者可以指定標頭、輸入名單資訊、指定簽到表的排版，然後產生適合列印的表格。
+techniques: - **Vue.js**: MVVM框架
+- **Semantic UI**: RWD框架。
+- **CSS**: 控制列印版面。
+- **PWA**: 可離線執行的網頁。
