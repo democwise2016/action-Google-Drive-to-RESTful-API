@@ -45,12 +45,38 @@ function csvToJson(csvFilePath, jsonFilePath) {
       .on('end', async () => {
         try {
           await fs.promises.writeFile(jsonFilePath, JSON.stringify(results, null, 2));
-          resolve();
+          resolve(true);
         } catch (err) {
           reject(err);
         }
       });
   });
+}
+
+function csvToTxt(csvFilePath, outputPath) {
+  return new Promise((resolve, reject) => {
+    const results = [];
+    fs.createReadStream(csvFilePath)
+      .pipe(csv())
+      .on('data', (data) => results.push(data))
+      .on('end', async () => {
+        try {
+          let output = results.map(item => {
+            return Object.keys(item).map((key) => {
+              return `${key}: ${item[key]}` 
+            }).join('\n')
+          }).join('\n\n####\n\n')
+
+          await fs.promises.writeFile(outputPath, output);
+          
+
+          resolve(true);
+        } catch (err) {
+          reject(err);
+        }
+      });
+  });
+    
 }
 
 function csvToHtml(csvFilePath, title, outputPath) {
@@ -115,6 +141,7 @@ module.exports = async function (url, feedID) {
 
   const csvFilePath = path.join(feedFolder, `${id}.csv`);
   const jsonFilePath = path.join(feedFolder, `${id}.json`);
+  const txtFilePath = path.join(feedFolder, `${id}.txt`);
   const htmlFilePath = path.join(feedFolder, `${id}.html`);
 
   try {
@@ -122,9 +149,10 @@ module.exports = async function (url, feedID) {
     await csvToJson(csvFilePath, jsonFilePath);
     // await csvToHTML(csvFilePath, htmlFilePath);
     await csvToHtml(csvFilePath, filename, htmlFilePath)
+    await csvToTxt(csvFilePath, txtFilePath)
     fs.unlinkSync(csvFilePath)
 
-    return [path.basename(htmlFilePath), path.basename(jsonFilePath)]
+    return [path.basename(htmlFilePath), path.basename(jsonFilePath), path.basename(txtFilePath)]
     // console.log(`JSON saved to ${jsonFilePath}`);
   } catch (error) {
     console.error('Error:', error);

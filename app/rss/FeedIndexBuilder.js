@@ -15,7 +15,7 @@ module.exports = function () {
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>ACTION-RSS-Fulltext</title>
+  <title>action-Google-Drive-to-RESTful-API</title>
 </head>
 <body>
 <ol>
