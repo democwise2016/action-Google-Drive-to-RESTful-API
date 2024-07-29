@@ -5,7 +5,7 @@ url: https://github.com/pulipulichen/docker-app-Folder-List ##
  description_en_us: By providing a folder path as input, this tool generates a file containing a comprehensive list of all files and subfolders within that specific folder. ##
  description_zh_tw: 輸入一個資料夾的路徑，這個工具會自動產生一個檔案，裡面包含這個資料夾裡面所有檔案和子資料夾的清單。 ##
  techniques: - **Docker**: 以容器化方式部署。確保工具的運作在不同平臺都能運行。
-- **Node.js**: 執行腳本的程式語言
+- **Node.js**: 執行腳本的程式語言。
 
 ####
 
