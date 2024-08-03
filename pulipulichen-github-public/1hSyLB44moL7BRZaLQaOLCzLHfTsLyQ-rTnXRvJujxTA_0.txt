@@ -1,9 +1,21 @@
+url: https://github.com/democwise2016/action-UT-Podcast-Docker-Image ##
+ project_name: action-UT-Podcast-Docker-Image ##
+ description_short_zh_tw: 將UT的影片轉換成mp3聲音檔，然後提供Podcast Feed給人訂閱。這是用來產生Docker映像檔的保存庫。 ##
+ description_short_en: Convert UT videos to mp3 audio files and provide a Podcast Feed for subscription. This is a repository for generating Docker images.  ##
+ description_zh_tw: 這個專案可以讓您輸入一或多個 UT 影片網址，將其轉換成 mp3 聲音檔，並產生一個新的 Podcast Feed。您可以使用這個新的 Podcast Feed 訂閱您喜歡的 Podcast 播放器，方便地收聽 UT 影片的音訊內容。這個保存庫主要用來產生Docker映像檔。 ##
+ description_en_us: This project allows you to input one or more UT video URLs, convert them to mp3 audio files, and generate a new Podcast Feed. You can then use this new Podcast Feed to subscribe to your favorite Podcast player, making it easy to listen to the audio content of UT videos. This is a repository for generating Docker images.  ##
+ techniques: - **Docker**: 以容器化方式部署。確保工具的運作在不同平臺都能運行。
+- **Node.js**: 執行腳本的程式語言。
+- **Python**: 下載UT的聲音檔案。
+
+####
+
 url: https://github.com/democwise2016/action-Podcast-Filter-Docker-Image ##
  project_name: action-Podcast-Filter-Docker-Image ##
  description_short_zh_tw: 從Podcast Feed過濾出想要聽的節目，產生新的Podcast Feed。這是用來產生Docker映像檔的保存庫。 ##
  description_short_en: Generate a new Podcast Feed by filtering desired episodes from a Podcast Feed. This is a repository for generating Docker images.  ##
  description_zh_tw: 這個專案可以讓您輸入一或多個 Podcast Feed 網址，並設定篩選條件，例如關鍵字、主持人、節目長度等等。它會根據您的設定，從原始 Podcast Feed 中過濾出符合條件的節目，並產生一個新的 Podcast Feed。您可以使用這個新的 Podcast Feed 訂閱您喜歡的 Podcast 播放器，方便地收聽您想聽的節目。這個保存庫主要用來產生Docker映像檔。 ##
- description_en_us: This project allows you to input one or more Podcast Feed URLs and set filter criteria such as keywords, hosts, episode duration, etc. Based on your settings, it filters episodes from the original Podcast Feeds that match your criteria and generates a new Podcast Feed. You can then use this new Podcast Feed to subscribe to your favorite Podcast player, making it easy to listen to the episodes you want. ##
+ description_en_us: This project allows you to input one or more Podcast Feed URLs and set filter criteria such as keywords, hosts, episode duration, etc. Based on your settings, it filters episodes from the original Podcast Feeds that match your criteria and generates a new Podcast Feed. You can then use this new Podcast Feed to subscribe to your favorite Podcast player, making it easy to listen to the episodes you want. This is a repository for generating Docker images.  ##
  techniques: - **Docker**: 以容器化方式部署。確保工具的運作在不同平臺都能運行。
 - **Node.js**: 執行腳本的程式語言。
 
