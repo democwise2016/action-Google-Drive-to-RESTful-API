@@ -49,6 +49,14 @@ let feedList = [
       ItemFilters['gdrive'].ItemFilterGoogleDriveFolder,
     ],
   },
+  {
+    title: '購物評價 public',
+    feedID: 'shopping-comment-public',
+    feedURL: 'https://drive.google.com/drive/folders/1K3CArAip8fdBlr-siizKdNGq7wKNWQj_?usp=drive_link',
+    itemFilters: [
+      ItemFilters['gdrive'].ItemFilterGoogleDriveFolder,
+    ],
+  },
 ]
 // ----------------------------------------------------------------
 
