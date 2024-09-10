@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>購物評價 public</title>
+    <style>
+    p button { font-size: 3rem;}
+    </style>
+    <script>
+    function copyPlainString (text) {
+      if (!navigator.clipboard) {
+        fallbackCopyTextToClipboard(text);
+        return;
+      }
+      navigator.clipboard.writeText(text).then(function () {
+      }, function (err) {
+      });
+    }
+
+    function fallbackCopyTextToClipboard(text) {
+      var textArea = document.createElement("textarea");
+      textArea.value = text;
+  
+      // Avoid scrolling to bottom
+      textArea.style.top = "0";
+      textArea.style.left = "0";
+      textArea.style.position = "fixed";
+  
+      document.body.appendChild(textArea);
+      textArea.focus();
+      textArea.select();
+  
+      try {
+        var successful = document.execCommand('copy');
+        var msg = successful ? 'successful' : 'unsuccessful';
+        console.log('Fallback: Copying text command was ' + msg);
+      } catch (err) {
+        console.error('Fallback: Oops, unable to copy', err);
+      }
+  
+      document.body.removeChild(textArea);
+    }
+    </script>
+  </head>
+  <body>
+    <h1>購物評價 public</h1>
+    <p>
+      <button type="button" onclick="copyPlainString('https://democwise2016.github.io/action-Google-Drive-to-RESTful-API/shopping-comment-public/1RB4kKW0s5eUH6f2t3f7m6qnd3OGGbXp0fzQ3zEYn_rM.html'); this.style.color ='red'">COPY</button>
+      <a href="https://democwise2016.github.io/action-Google-Drive-to-RESTful-API/shopping-comment-public/1RB4kKW0s5eUH6f2t3f7m6qnd3OGGbXp0fzQ3zEYn_rM.html" target="_blank">https://democwise2016.github.io/action-Google-Drive-to-RESTful-API/shopping-comment-public/1RB4kKW0s5eUH6f2t3f7m6qnd3OGGbXp0fzQ3zEYn_rM.html</a>
+    </p>
+<p>
+      <button type="button" onclick="copyPlainString('https://democwise2016.github.io/action-Google-Drive-to-RESTful-API/shopping-comment-public/1RB4kKW0s5eUH6f2t3f7m6qnd3OGGbXp0fzQ3zEYn_rM.json'); this.style.color ='red'">COPY</button>
+      <a href="https://democwise2016.github.io/action-Google-Drive-to-RESTful-API/shopping-comment-public/1RB4kKW0s5eUH6f2t3f7m6qnd3OGGbXp0fzQ3zEYn_rM.json" target="_blank">https://democwise2016.github.io/action-Google-Drive-to-RESTful-API/shopping-comment-public/1RB4kKW0s5eUH6f2t3f7m6qnd3OGGbXp0fzQ3zEYn_rM.json</a>
+    </p>
+<p>
+      <button type="button" onclick="copyPlainString('https://democwise2016.github.io/action-Google-Drive-to-RESTful-API/shopping-comment-public/1RB4kKW0s5eUH6f2t3f7m6qnd3OGGbXp0fzQ3zEYn_rM.txt'); this.style.color ='red'">COPY</button>
+      <a href="https://democwise2016.github.io/action-Google-Drive-to-RESTful-API/shopping-comment-public/1RB4kKW0s5eUH6f2t3f7m6qnd3OGGbXp0fzQ3zEYn_rM.txt" target="_blank">https://democwise2016.github.io/action-Google-Drive-to-RESTful-API/shopping-comment-public/1RB4kKW0s5eUH6f2t3f7m6qnd3OGGbXp0fzQ3zEYn_rM.txt</a>
+    </p>
+  </body>
+  </html>
