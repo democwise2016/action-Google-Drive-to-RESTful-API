@@ -2,7 +2,7 @@ name: Crawler
 on: 
   push:
   schedule:
-    - cron:  "5 22 * * *" # 實際執行時間是這個時間加八小時
+    - cron:  "5 22 * * 1,4" # 實際執行時間是這個時間加八小時
     # - cron:  "5 6 * * *" # 實際執行時間是這個時間加八小時
     # - cron:  "5 14 * * *" # 實際執行時間是這個時間加八小時
   workflow_dispatch:
