@@ -1,0 +1,105 @@
+週次: 1 ##
+ 日期: 9/14 ##
+ 課堂主題: 課程說明
+
+####
+
+週次: 2 ##
+ 日期: 9/21 ##
+ 課堂主題: 資訊儲存與檢索導論 / Introduct to Information Retrieval and Storage
+
+####
+
+週次: 3 ##
+ 日期: 9/28 ##
+ 課堂主題: 系統架構圖與使用介面繪製實作
+
+####
+
+週次: 4 ##
+ 日期: 10/5 ##
+ 課堂主題: 檢索介面 / User Interfaces for Search
+
+####
+
+週次: 5 ##
+ 日期: 10/12 ##
+ 課堂主題: 相關回饋與查詢擴展 / Relevance Feedback and Query Expansion
+
+####
+
+週次: 6 ##
+ 日期: 10/19 ##
+ 課堂主題: 檢索評估 / Retrieval Evaluation
+
+####
+
+週次: 7 ##
+ 日期: 10/26 ##
+ 課堂主題: 網際網路檢索 / Web Retrieval
+
+####
+
+週次: 8 ##
+ 日期: 11/2 ##
+ 課堂主題: 搜尋引擎 / Search Engine
+
+####
+
+週次: 9 ##
+ 日期: 11/9 ##
+ 課堂主題: 搜尋引擎建置 / Search Engine Construction (I)
+
+####
+
+週次: 10 ##
+ 日期: 11/16 ##
+ 課堂主題: 專家演講
+
+####
+
+週次: 11 ##
+ 日期: 11/23 ##
+ 課堂主題: 搜尋引擎建置 (II) / Search Engine Construction (II)
+
+####
+
+週次: 12 ##
+ 日期: 11/30 ##
+ 課堂主題: 網路爬蟲實作 / Web Crawler Implementation
+
+####
+
+週次: 13 ##
+ 日期: 12/7 ##
+ 課堂主題: 結構化文字檢索 / Structured Text Retrieval
+
+####
+
+週次: 14 ##
+ 日期: 12/14 ##
+ 課堂主題: 中文自然語言處理 / Chinese Natural Language Process
+
+####
+
+週次: 15 ##
+ 日期: 12/21 ##
+ 課堂主題: 資訊檢索與人工智慧 / Information Retrieval and Artificial Intelligence
+
+####
+
+週次: 16 ##
+ 日期: 12/28 ##
+ 課堂主題: 文字探勘實作
+
+####
+
+週次: 17 ##
+ 日期: 1/4 ##
+ 課堂主題: 企業檢索 / Enterprise Search
+
+####
+
+週次: 18 ##
+ 日期: 1/11 ##
+ 課堂主題: 期末報告
