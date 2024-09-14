@@ -79,7 +79,7 @@ module.exports = function (feedJSON) {
       let ext = GoogleDriveTypeToExt(item.type)
       let id = extractGoogleFileID(item.link)
 
-      return `${CONFIG.publicURL}${feedID}/${id}.${ext}`
+      return `./${feedID}/${id}.${ext}`
     })
   }
     

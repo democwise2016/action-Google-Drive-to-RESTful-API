@@ -81,11 +81,11 @@ module.exports = function (feedJSON) {
 
       // return `${CONFIG.publicURL}${feedID}/${id}.${ext}`
       if (typeof(ext) === 'string') {
-        links.push(`${CONFIG.publicURL}${feedID}/${id}.${ext}`)
+        links.push(`./${feedID}/${id}.${ext}`)
       }
       else if (Array.isArray(ext)) {
         ext.forEach(extItem => {
-          links.push(`${CONFIG.publicURL}${feedID}/${id}.${extItem}`)
+          links.push(`./${feedID}/${id}.${extItem}`)
 
           if (extItem === 'txt') {
             // 檢查看看有沒有這個檔案
@@ -94,7 +94,7 @@ module.exports = function (feedJSON) {
             let filePath = path.join(feedFolder, `${id}_${idx}.txt`)
             console.log(filePath)
             while (fs.existsSync(filePath)) {
-              links.push(`${CONFIG.publicURL}${feedID}/${id}_${idx}.${extItem}`)
+              links.push(`./${feedID}/${id}_${idx}.${extItem}`)
               idx++
               filePath = path.join(feedFolder, `${id}_${idx}.txt`)
             }

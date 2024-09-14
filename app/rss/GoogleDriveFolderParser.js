@@ -7,10 +7,10 @@ const initDataCallbackParser = require('./gdrive/initDataCallbackParser.js')
 // ?const cheerio = require('cheerio')
 
 // const regex = /https:\/\/drive\.google\.com\/file\/d\/.*?\/view\?usp\\u003ddrive_web/g;
-const regexSheet = /https:\/\/docs\.google\.com\/spreadsheets\/d\/.*?\/edit\?usp\\u003ddrive_web/g;
-const regexDoc = /https:\/\/docs\.google\.com\/document\/d\/.*?\/edit\?usp\\u003ddrive_web/g;
-const regexPresentation = /https:\/\/docs\.google\.com\/presentation\/d\/.*?\/edit\?usp\\u003ddrive_web/g;
-const regexFile = /https:\/\/drive\.google\.com\/file\/d\/.*?\/view\?usp\\u003ddrive_web/g;
+const regexSheet = /https:\/\/docs\.google\.com\/spreadsheets\/d\/.*?\/edit\?usp\\u003ddrivesdk/g;
+const regexDoc = /https:\/\/docs\.google\.com\/document\/d\/.*?\/edit\?usp\\u003ddrivesdk/g;
+const regexPresentation = /https:\/\/docs\.google\.com\/presentation\/d\/.*?\/edit\?usp\\u003ddrivesdk/g;
+const regexFile = /https:\/\/drive\.google\.com\/file\/d\/.*?\/view\?usp\\u003ddrivesdk/g;
 
 function parsingDataJSON(data, regex, type) {
   let matches = data.match(regex);
