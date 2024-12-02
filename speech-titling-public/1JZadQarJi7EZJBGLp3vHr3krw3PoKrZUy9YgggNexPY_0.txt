@@ -103,3 +103,15 @@ LLM ##
 推廣應用：將開源軟體整合到商業產品和服務中
 結論：共建開放、合作、共贏的未來 ##
  相關連結: https://gitmind.com/app/docs/m6tsisv5
+
+####
+
+演講標題: Python 自然語言處理應用：命名實體識別與情緒分析 ##
+ 英文標題: Python Natural Language Processing Applications: From Named Entity Recognition to Sentiment Analysis ##
+ 演講簡介: 在大數據時代，如何從巨量的非結構性文字資料中萃取出有價值的資訊，以支持決策和洞見，已成為一項現代人應具備的重要技能。本次演講將介紹如何應用當前主流的深度學習模型，聚焦於自然語言處理（NLP）的兩個核心議題：命名實體識別（Named Entity Recognition, NER）與情緒分析（Sentiment Analysis）。我們將以實作教學的方式，帶領大家深入了解這些技術的應用場景與實際操作。
+
+演講中，我們將使用 Python 作為主要程式語言，並在 Google Colab 上進行操作，讓您能夠動手實作，親身體驗 NLP 的魅力。請與會者提前準備好電腦，並註冊與登入 Google Colab，與我們一起探索自然語言處理的世界，共同激發更多創新的應用想法！ ##
+ 對象: 政治系研究生 ##
+ 時間: 2024/12/11 ##
+ 關鍵字或大綱: 自然語言處理、NLP、Python、命名實體辨識、NER、情緒分析、Sentiment Analysis、資訊擷取、非結構化資料、Google Colab、實作教學、機器學習、深度學習。 ##
+ 相關連結: https://l.pulipuli.info/24/nsysu
