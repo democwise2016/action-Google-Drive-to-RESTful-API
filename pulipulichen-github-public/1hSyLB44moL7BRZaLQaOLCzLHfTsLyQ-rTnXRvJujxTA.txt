@@ -335,3 +335,39 @@ techniques: - **Vue.js**: MVVM框架
 - **Semantic UI**: RWD框架。
 - **CSS**: 控制列印版面。
 - **PWA**: 可離線執行的網頁。
+
+####
+
+url: https://github.com/pulipulichen/docker-app-ScanSim-PDF
+project_name: docker-app-ScanSim-PDF
+description_short_zh_tw: 將數位PDF轉換成模仿掃描的PDF
+description_short_en: 
+description_zh_tw: 這一個Docker APP的用途是將電子文件模擬成列印後再掃描成PDF的結果。做法是將任意文件轉換成圖片檔，然後稍微轉個角度，再將它組合成PDF檔案。轉換後的PDF不能選取文字，也刻意地呈現有點粗糙的感覺。
+description_en_us: The purpose of this Docker app is to simulate the process of printing an electronic document and then scanning it back into a PDF. The method involves converting any document into image files, slightly rotating them, and then combining them into a PDF file. The resulting PDF cannot have its text selected and is intentionally presented with a slightly rough appearance.
+techniques: - **Docker**: 以容器化部署，確保應用程式具備可移植性和管理便利性。
+- **ImageMagick**: 圖片處理。
+- **qpdf**: PDF檔案處理。
+
+####
+
+url: https://github.com/pulipulichen/docker-app-PDF-remove-Annotations
+project_name: docker-app-PDF-remove-Annotations
+description_short_zh_tw: 移除PDF檔案中的註解。
+description_short_en: Remove annotations from PDF files.
+description_zh_tw: PDF Annotation Remover是一個Docker APP，它的功能是移除PDF檔案中的所有註解，例如螢光筆、重點、筆記、圖章等等，讓您得到一個乾淨的PDF檔案。輸入的資料為含有註解的PDF檔案，輸出的資料為移除註解後的PDF檔案。
+description_en_us: This tool removes all annotations from a PDF file, such as highlights, underlines, notes, stamps, etc., giving you a clean PDF file. The input is a PDF file with annotations, and the output is a cleaned PDF file without annotations.
+techniques: - **qpdf**:  處理PDF檔案內容和結構的函式庫。
+- **Docker**: 提供容器化部署，確保應用程式的可移植性和管理便利性。
+- **Python**:  用於檔案處理和控制qpdf函式庫。
+
+####
+
+url: https://github.com/pulipulichen/Colab-PDF-Unlocker
+project_name: Colab PDF Unlocker
+description_short_zh_tw: 移除 PDF 保護限制的工具
+description_short_en: A tool for removing PDF protection restrictions.
+description_zh_tw: 輸入受保護的 PDF 檔案以及你知道的密碼，這個工具會嘗試移除 PDF 的保護限制，例如複製、列印等等，並輸出一個無保護限制的 PDF 檔案。
+description_en_us: This tool takes a protected PDF file as input with a known password and attempts to remove its restrictions, such as copying and printing, outputting an unrestricted PDF file.
+techniques: - **qpdf**:  處理PDF檔案內容和結構的函式庫。
+- **Google Colab**: 一個提供免費雲端運算資源的平台，可以執行 Linux 工具和 Python 程式碼。
+- **Python**:  用於檔案處理和控制qpdf函式庫。
