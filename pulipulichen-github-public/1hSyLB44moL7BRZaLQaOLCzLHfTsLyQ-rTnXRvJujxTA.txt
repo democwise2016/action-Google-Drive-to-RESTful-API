@@ -371,3 +371,14 @@ description_en_us: This tool takes a protected PDF file as input with a known pa
 techniques: - **qpdf**:  處理PDF檔案內容和結構的函式庫。
 - **Google Colab**: 一個提供免費雲端運算資源的平台，可以執行 Linux 工具和 Python 程式碼。
 - **Python**:  用於檔案處理和控制qpdf函式庫。
+
+####
+
+url: https://github.com/pulipulichen/docker-app-Document-to-Markdown.git
+project_name: docker app Document to Markdown
+description_short_zh_tw: 將文件轉換成Markdown格式。
+description_short_en: Converts documents to Markdown format.
+description_zh_tw: 這個Docker APP會將輸入的各式文件，例如Word、PDF等等，轉換成Markdown格式的檔案輸出。
+description_en_us: This Docker APP takes various document formats as input, such as Word and PDF files, and converts them into Markdown format.
+techniques: - **Docker**: 提供容器化部署，確保應用程式的可移植性和管理便利性。
+- **MarkItDown**: 將文件轉換成markdown的套件。
