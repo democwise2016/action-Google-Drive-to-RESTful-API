@@ -382,3 +382,15 @@ url: https://github.com/pulipulichen/docker-app-Document-to-Markdown.git ##
  description_en_us: This Docker APP takes various document formats as input, such as Word and PDF files, and converts them into Markdown format. ##
  techniques: - **Docker**: 提供容器化部署，確保應用程式的可移植性和管理便利性。
 - **MarkItDown**: 將文件轉換成markdown的套件。
+
+####
+
+url: https://github.com/pulipulichen/docker-app-LangFlow ##
+ project_name: docker-app-LangFlow ##
+ description_short_zh_tw: LangFlow 的 Docker 應用程式，方便部署和管理。 ##
+ description_short_en: A Dockerized application for LangFlow, simplifying deployment and management. ##
+ description_zh_tw: 此專案將 LangFlow 封裝成 Docker 應用程式，目的是讓使用者可以用本機電腦上的檔案來快速建立並執行 LangFlow 服務，並獲得 LangFlow 的執行結果。 ##
+ description_en_us: This project packages LangFlow as a Docker application, allowing users to leverage local files for LangFlow configuration, enabling quick setup, execution, and retrieval of results. ##
+ techniques: - **Docker**: 提供容器化部署，確保應用程式的可攜性和管理便利性。
+- **LangFlow**: RAG應用框架。
+- **NextCloud**: 檔案管理應用程式。
