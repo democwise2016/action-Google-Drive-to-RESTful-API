@@ -1,66 +1,66 @@
-演講標題: AI繪圖教學 x 教AI學習繪圖 ##
- 英文標題: AI Image Generation in Education: From Learning to Draw to Teaching AI to Draw ##
- 演講簡介: 近年來，人工智慧（AI）技術快速發展，AI 繪圖工具也日漸普及，不僅改變了藝術創作的方式，也為教材的製作帶來新的可能性。本演講將介紹生成式繪圖技術的概念，並探討如何利用 AI 繪圖滿足教學需求。本演講將深入了解目前的 AI 繪圖技術，及這些技術選擇上的考量。再來探討教學中教材製作的繪圖需求，包括版權議題、適用性等諸多考量，以此探討AI繪圖的合理使用方式。接著，本演講會聚焦於情境圖片和示意圖兩種類型的視覺元素，介紹素材資料庫與AI繪圖的相關工具。演講最後則是進一步探討視覺化整合的重要性，以及控制AI繪圖的進階做法和注意事項。希望本演講能幫助教師精進教材呈現，讓學生能從教師講課和教材的視覺刺激來加深學習印象。演講內含上網操作電腦的實作，並會用到Google帳號的登入。本演講主要是適合教育工作者以及對 AI 繪圖應用於教學有興趣的人士參與。 ##
- 對象: 教師 ##
- 時間: 2024/11/19 ##
- 關鍵字或大綱: AI繪圖 ##
- 相關連結: 
+title_zh_TW: AI繪圖教學 x 教AI學習繪圖 ##
+ title_english: AI Image Generation in Education: From Learning to Draw to Teaching AI to Draw ##
+ description: 近年來，人工智慧（AI）技術快速發展，AI 繪圖工具也日漸普及，不僅改變了藝術創作的方式，也為教材的製作帶來新的可能性。本演講將介紹生成式繪圖技術的概念，並探討如何利用 AI 繪圖滿足教學需求。本演講將深入了解目前的 AI 繪圖技術，及這些技術選擇上的考量。再來探討教學中教材製作的繪圖需求，包括版權議題、適用性等諸多考量，以此探討AI繪圖的合理使用方式。接著，本演講會聚焦於情境圖片和示意圖兩種類型的視覺元素，介紹素材資料庫與AI繪圖的相關工具。演講最後則是進一步探討視覺化整合的重要性，以及控制AI繪圖的進階做法和注意事項。希望本演講能幫助教師精進教材呈現，讓學生能從教師講課和教材的視覺刺激來加深學習印象。演講內含上網操作電腦的實作，並會用到Google帳號的登入。本演講主要是適合教育工作者以及對 AI 繪圖應用於教學有興趣的人士參與。 ##
+ audience: 教師 ##
+ time: 2024/11/19 ##
+ keywords: AI繪圖 ##
+ relation_resource: 
 
 ####
 
-演講標題: 不只是寫作業：大型語言模型在工業領域的潛力 ##
- 英文標題: Beyond Homework: The Potential of Large Language Models in Industrial Applications ##
- 演講簡介: 聊天機器人技術近年來蓬勃發展，從早期的規則式系統演進到現今基於大型語言模型的生成式AI，應用範圍也日益擴大。本演講著重於探討聊天機器人在工業領域的應用，並深入剖析檢索增強生成（RAG）技術在工業中的理論架構。演講將首先回顧聊天機器人的發展歷程，介紹不同類型聊天機器人的架構與特性。接著，本演講將聚焦於工業場景，探討聊天機器人在供應鏈管理、安全訓練與指導、以及知識管理等方面的應用。接下來，本演講將剖析大型語言模型在工業領域的應用理論，深入探討如何將資料與大型語言模型結合。演講的最後將展示RAG技術的實作，讓聽眾能夠體驗大型語言模型與專家知識結合所帶來的強大價值，幫助大家更深入地理解其技術架構與應用方法，並啟發更多創新應用的想法。 ##
- 對象: 大學生 ##
- 時間: 2024/11/15 ##
- 關鍵字或大綱: 大型語言模型, 工業應用, 聊天機器人, 檢索增強生成, RAG技術, AI, 供應鏈管理, 安全訓練, 知識管理 ##
- 相關連結: 
+title_zh_TW: 不只是寫作業：大型語言模型在工業領域的潛力 ##
+ title_english: Beyond Homework: The Potential of Large Language Models in Industrial Applications ##
+ description: 聊天機器人技術近年來蓬勃發展，從早期的規則式系統演進到現今基於大型語言模型的生成式AI，應用範圍也日益擴大。本演講著重於探討聊天機器人在工業領域的應用，並深入剖析檢索增強生成（RAG）技術在工業中的理論架構。演講將首先回顧聊天機器人的發展歷程，介紹不同類型聊天機器人的架構與特性。接著，本演講將聚焦於工業場景，探討聊天機器人在供應鏈管理、安全訓練與指導、以及知識管理等方面的應用。接下來，本演講將剖析大型語言模型在工業領域的應用理論，深入探討如何將資料與大型語言模型結合。演講的最後將展示RAG技術的實作，讓聽眾能夠體驗大型語言模型與專家知識結合所帶來的強大價值，幫助大家更深入地理解其技術架構與應用方法，並啟發更多創新應用的想法。 ##
+ audience: 大學生 ##
+ time: 2024/11/15 ##
+ keywords: 大型語言模型, 工業應用, 聊天機器人, 檢索增強生成, RAG技術, AI, 供應鏈管理, 安全訓練, 知識管理 ##
+ relation_resource: 
 
 ####
 
-演講標題: 現代研究需要現代手段：用知識管理和AI輕鬆做研究！ ##
- 英文標題: Modern Research Demands Modern Tools: Leveraging Knowledge Management and AI for Effortless Research! ##
- 演講簡介: 在現代各種研究領域都呈現資訊量爆炸性增長，傳統的研究方法已不足以應付。本次演講將引領大家邁向智慧研究時代。針對研究過程中的文獻蒐集、管理、改寫與報告等各階段所遭遇的問題，帶領大家學習如何利用知識管理工具Zotero以及各種人工智慧(AI)應用，化解資訊過載的壓力，提升研究效率。 ##
- 對象: 研究生 ##
- 時間: 2024/10/19 ##
- 關鍵字或大綱: 研究 ##
- 相關連結: 
+title_zh_TW: 現代研究需要現代手段：用知識管理和AI輕鬆做研究！ ##
+ title_english: Modern Research Demands Modern Tools: Leveraging Knowledge Management and AI for Effortless Research! ##
+ description: 在現代各種研究領域都呈現資訊量爆炸性增長，傳統的研究方法已不足以應付。本次演講將引領大家邁向智慧研究時代。針對研究過程中的文獻蒐集、管理、改寫與報告等各階段所遭遇的問題，帶領大家學習如何利用知識管理工具Zotero以及各種人工智慧(AI)應用，化解資訊過載的壓力，提升研究效率。 ##
+ audience: 研究生 ##
+ time: 2024/10/19 ##
+ keywords: 研究 ##
+ relation_resource: 
 
 ####
 
-演講標題: 資訊檢索的AI革新：從資訊檢索到檢索增強生成 ##
- 英文標題: The AI Revolution in Information Retrieval: From Information Retrieval to Retrieval-Augmented Generation ##
- 演講簡介:  ##
- 對象: 圖書館員 ##
- 時間: 2024/7/18 ##
- 關鍵字或大綱: 資訊檢索
+title_zh_TW: 資訊檢索的AI革新：從資訊檢索到檢索增強生成 ##
+ title_english: The AI Revolution in Information Retrieval: From Information Retrieval to Retrieval-Augmented Generation ##
+ description:  ##
+ audience: 圖書館員 ##
+ time: 2024/7/18 ##
+ keywords: 資訊檢索
 RAG
 LLM ##
- 相關連結: 
+ relation_resource: 
 
 ####
 
-演講標題: 學習行為的觀察與分析：滯後序列分析工作坊 ##
- 英文標題: Observation and Analysis of Learning Behavior: Lag Sequential Analysis Workshop ##
- 演講簡介: 在教學研究領域中，除了量化的前後測成績驗證學習成效外，質性觀察也提供了深入分析學生行為的視角。其中，滯後序列分析作為一種有效的方法，被廣泛應用於驗證行為序列的轉變與教學理論之間的關聯。本工作坊將引領學員逐步掌握滯後序列分析的精髓。從教學研究常用的準實驗設計出發，首先探討如何系統地觀察、記錄和編碼學習行為，並著重闡述編碼表的使用與信度評估方法，確保編碼結果具備內部一致性信度。接著，我將深入淺出地講解滯後序列分析的原理、流程和統計方法，並結合實際案例，示範如何運用我開發的滯後序列分析計算機進行分析、解讀結果，以及撰寫研究報告。最後，我將探討滯後序列分析在研究中可能遇到的問題，並提供活動後練習資料集供學員實踐操作，以期學員能將所學應用於自身的教學研究專案中。 ##
- 對象: 數位學習的老師 ##
- 時間: 2024/7/11 ##
- 關鍵字或大綱: 前言：準實驗研究設計、觀察依變項、分析行為模式、行為序列資料與編碼
+title_zh_TW: 學習行為的觀察與分析：滯後序列分析工作坊 ##
+ title_english: Observation and Analysis of Learning Behavior: Lag Sequential Analysis Workshop ##
+ description: 在教學研究領域中，除了量化的前後測成績驗證學習成效外，質性觀察也提供了深入分析學生行為的視角。其中，滯後序列分析作為一種有效的方法，被廣泛應用於驗證行為序列的轉變與教學理論之間的關聯。本工作坊將引領學員逐步掌握滯後序列分析的精髓。從教學研究常用的準實驗設計出發，首先探討如何系統地觀察、記錄和編碼學習行為，並著重闡述編碼表的使用與信度評估方法，確保編碼結果具備內部一致性信度。接著，我將深入淺出地講解滯後序列分析的原理、流程和統計方法，並結合實際案例，示範如何運用我開發的滯後序列分析計算機進行分析、解讀結果，以及撰寫研究報告。最後，我將探討滯後序列分析在研究中可能遇到的問題，並提供活動後練習資料集供學員實踐操作，以期學員能將所學應用於自身的教學研究專案中。 ##
+ audience: 數位學習的老師 ##
+ time: 2024/7/11 ##
+ keywords: 前言：準實驗研究設計、觀察依變項、分析行為模式、行為序列資料與編碼
 觀察行為的記錄：螢幕錄影、數位學習記錄、遊戲記錄、網站瀏覽記錄、資料彙整
 編碼表：認知分類架構表、互動分析模型、問題解決討論行為編碼表、信度評估、編碼彙整、現場活動
 滯後序列分析：事件轉移表、滯後序列分析流程、檢定統計量
 滯後序列分析操作：實際計算、現場活動、結論寫作
 深入滯後序列分析：變化、活動後練習 ##
- 相關連結: 
+ relation_resource: 
 
 ####
 
-演講標題: 從生成式AI到脈絡式AI：文學院AI人才培育的反思 ##
- 英文標題: From Generative AI to Contextual AI: Reflections on the Cultivation of AI Talent in the College of Liberal Arts ##
- 演講簡介:  ##
- 對象: 淡江大學文學院老師 ##
- 時間: 2024/6/11 ##
- 關鍵字或大綱: 文學院AI人才
+title_zh_TW: 從生成式AI到脈絡式AI：文學院AI人才培育的反思 ##
+ title_english: From Generative AI to Contextual AI: Reflections on the Cultivation of AI Talent in the College of Liberal Arts ##
+ description:  ##
+ audience: 淡江大學文學院老師 ##
+ time: 2024/6/11 ##
+ keywords: 文學院AI人才
         教學現場\nAI應用
                 教材圖片
                         問答機器人
@@ -80,16 +80,16 @@ LLM ##
                 AI素養
                         脈絡知識
                                 人文思維 ##
- 相關連結: https://docs.google.com/presentation/d/1jL6688sZ5nifTYAdZe5pve_ZPtjnnSp-SDCuL-fujgw/edit?usp=sharing
+ relation_resource: https://docs.google.com/presentation/d/1jL6688sZ5nifTYAdZe5pve_ZPtjnnSp-SDCuL-fujgw/edit?usp=sharing
 
 ####
 
-演講標題: 圖書館與開放原始碼的共生之道：社群協力促進共同成長 ##
- 英文標題: The Library and Open Source: A Symbiotic Relationship for Community Growth ##
- 演講簡介: 圖書館作為知識傳播的基石，一直以來都秉持著開放、共享的精神，這與開放原始碼社群所倡導的理念可說是相輔相成。開放原始碼各項專案所具備的成本效益、可定制性以及安全性等優勢，已經融入圖書館服務生態系中的一員。本演講將先介紹開放原始碼專案的定義與精神，再來分享圖書館相關的開放原始碼專案。接著演講會說明開放原始碼專案的核心價值：社群發展，介紹學術界的圖書館與商業的EBSCO如何為開放原始碼專案提出改善貢獻，實現社群協力共同成長的開放精神。 ##
- 對象: 大學圖書館員 ##
- 時間: 2024/6/30 ##
- 關鍵字或大綱: 圖書館與開放原始碼：共生關係的建立
+title_zh_TW: 圖書館與開放原始碼的共生之道：社群協力促進共同成長 ##
+ title_english: The Library and Open Source: A Symbiotic Relationship for Community Growth ##
+ description: 圖書館作為知識傳播的基石，一直以來都秉持著開放、共享的精神，這與開放原始碼社群所倡導的理念可說是相輔相成。開放原始碼各項專案所具備的成本效益、可定制性以及安全性等優勢，已經融入圖書館服務生態系中的一員。本演講將先介紹開放原始碼專案的定義與精神，再來分享圖書館相關的開放原始碼專案。接著演講會說明開放原始碼專案的核心價值：社群發展，介紹學術界的圖書館與商業的EBSCO如何為開放原始碼專案提出改善貢獻，實現社群協力共同成長的開放精神。 ##
+ audience: 大學圖書館員 ##
+ time: 2024/6/30 ##
+ keywords: 圖書館與開放原始碼：共生關係的建立
 圖書館服務面臨的挑戰與機遇
 開放原始碼的優勢與價值
 圖書館應用開放原始碼的案例分享
@@ -102,39 +102,39 @@ LLM ##
 技術合作：與社群共同開發、優化軟體
 推廣應用：將開源軟體整合到商業產品和服務中
 結論：共建開放、合作、共贏的未來 ##
- 相關連結: https://gitmind.com/app/docs/m6tsisv5
+ relation_resource: https://gitmind.com/app/docs/m6tsisv5
 
 ####
 
-演講標題: Python 自然語言處理應用：命名實體識別與情緒分析 ##
- 英文標題: Python Natural Language Processing Applications: From Named Entity Recognition to Sentiment Analysis ##
- 演講簡介: 在大數據時代，如何從巨量的非結構性文字資料中萃取出有價值的資訊，以支持決策和洞見，已成為一項現代人應具備的重要技能。本次演講將介紹如何應用當前主流的深度學習模型，聚焦於自然語言處理（NLP）的兩個核心議題：命名實體識別（Named Entity Recognition, NER）與情緒分析（Sentiment Analysis）。我們將以實作教學的方式，帶領大家深入了解這些技術的應用場景與實際操作。
+title_zh_TW: Python 自然語言處理應用：命名實體識別與情緒分析 ##
+ title_english: Python Natural Language Processing Applications: From Named Entity Recognition to Sentiment Analysis ##
+ description: 在大數據時代，如何從巨量的非結構性文字資料中萃取出有價值的資訊，以支持決策和洞見，已成為一項現代人應具備的重要技能。本次演講將介紹如何應用當前主流的深度學習模型，聚焦於自然語言處理（NLP）的兩個核心議題：命名實體識別（Named Entity Recognition, NER）與情緒分析（Sentiment Analysis）。我們將以實作教學的方式，帶領大家深入了解這些技術的應用場景與實際操作。
 
 演講中，我們將使用 Python 作為主要程式語言，並在 Google Colab 上進行操作，讓您能夠動手實作，親身體驗 NLP 的魅力。請與會者提前準備好電腦，並註冊與登入 Google Colab，與我們一起探索自然語言處理的世界，共同激發更多創新的應用想法！ ##
- 對象: 政治系研究生 ##
- 時間: 2024/12/11 ##
- 關鍵字或大綱: 自然語言處理、NLP、Python、命名實體辨識、NER、情緒分析、Sentiment Analysis、資訊擷取、非結構化資料、Google Colab、實作教學、機器學習、深度學習。 ##
- 相關連結: https://l.pulipuli.info/24/nsysu
+ audience: 政治系研究生 ##
+ time: 2024/12/11 ##
+ keywords: 自然語言處理、NLP、Python、命名實體辨識、NER、情緒分析、Sentiment Analysis、資訊擷取、非結構化資料、Google Colab、實作教學、機器學習、深度學習。 ##
+ relation_resource: https://l.pulipuli.info/24/nsysu
 
 ####
 
-演講標題: 大型語言模型在工業領域的潛力 ##
- 英文標題: The Potential of Large Language Models in Industrial Fields ##
- 演講簡介: 聊天機器人技術近年來蓬勃發展，從早期的規則式系統演進到現今基於大型語言模型(LLM)的生成式AI，應用範圍也日益擴大。本演講著重於探討聊天機器人在工業領域的應用，並深入剖析檢索增強生成(RAG)技術在工業中的理論架構。演講將首先回顧聊天機器人的發展歷程，介紹不同類型聊天機器人的架構與特性，以及現今所使用的大型語言模型。接著，本演講將聚焦於大型語言模型在工業應用場景，探討聊天機器人在訓練、建議、化工研究、設計與生產等方面的案例。最後本演講將介紹現今開發大型語言模型成為落地應用的各種框架。演講也包括了RAG技術的實作，讓聽眾能夠實際親身體驗大型語言模型與專家知識結合所帶來的強大價值，幫助大家更深入地理解其技術架構與應用方法，並啟發更多創新應用的想法。 ##
- 對象:  ##
- 時間: 2024/11/15 ##
- 關鍵字或大綱: Part 1. 工業與聊天機器人
+title_zh_TW: 大型語言模型在工業領域的潛力 ##
+ title_english: The Potential of Large Language Models in Industrial Fields ##
+ description: 聊天機器人技術近年來蓬勃發展，從早期的規則式系統演進到現今基於大型語言模型(LLM)的生成式AI，應用範圍也日益擴大。本演講著重於探討聊天機器人在工業領域的應用，並深入剖析檢索增強生成(RAG)技術在工業中的理論架構。演講將首先回顧聊天機器人的發展歷程，介紹不同類型聊天機器人的架構與特性，以及現今所使用的大型語言模型。接著，本演講將聚焦於大型語言模型在工業應用場景，探討聊天機器人在訓練、建議、化工研究、設計與生產等方面的案例。最後本演講將介紹現今開發大型語言模型成為落地應用的各種框架。演講也包括了RAG技術的實作，讓聽眾能夠實際親身體驗大型語言模型與專家知識結合所帶來的強大價值，幫助大家更深入地理解其技術架構與應用方法，並啟發更多創新應用的想法。 ##
+ audience:  ##
+ time: 2024/11/15 ##
+ keywords: Part 1. 工業與聊天機器人
 Part 2. 大型語言模型的應用
 Part 3. 檢索增強生成的實作
 Part 4. 大型語言模型應用框架 ##
- 相關連結: https://blog.pulipuli.info/2025/02/slide-the-potential-of-large-language-models-in-industrial-fields.html
+ relation_resource: https://blog.pulipuli.info/2025/02/slide-the-potential-of-large-language-models-in-industrial-fields.html
 
 ####
 
-演講標題: 打造具備領域知識專長的大型語言模型：用Dify實作RAG ##
- 英文標題: Building Large Language Models with Domain Expertise: Implementing RAG with Dify ##
- 演講簡介: 大型語言模型（LLM）的知識範圍受限於訓練資料，應用於特定專業領域時，常因知識不足而出現幻覺 (Hallucination)，使用者也難以驗證 LLM 回覆的權威性。為突破此困境，Retrieval Augmented Generation (RAG) 技術透過連結外部知識庫，能夠為 LLM 添增領域專業的相關知識，進而提升 LLM 在該領域的表現。本講座將深入淺出地介紹如何運用 Dify 平台，結合向量資料庫與大型語言模型，建構具備領域知識專長的 AI 應用。講座內容涵蓋 RAG 的運作原理、Dify 平台的功能與操作，以及如何利用 Dify 將專業領域的知識與 LLM 整合，以提升 LLM 在特定領域的表現。本講座的內容將應用外部呼叫的API來使用人工智慧模型，因此即使是普通的辦公電腦也能輕易建構 RAG 應用。本講座適合對 LLM 應用開發有興趣的師生、資訊人員，以及任何想了解如何打造專業 AI 應用的聽眾。 ##
- 對象: 教育研究所碩博生 ##
- 時間: 2025/2 ##
- 關鍵字或大綱: Dify, LLM, RAG ##
- 相關連結: 
+title_zh_TW: 打造具備領域知識專長的大型語言模型：用Dify實作RAG ##
+ title_english: Building Large Language Models with Domain Expertise: Implementing RAG with Dify ##
+ description: 大型語言模型（LLM）的知識範圍受限於訓練資料，應用於特定專業領域時，常因知識不足而出現幻覺 (Hallucination)，使用者也難以驗證 LLM 回覆的權威性。為突破此困境，Retrieval Augmented Generation (RAG) 技術透過連結外部知識庫，能夠為 LLM 添增領域專業的相關知識，進而提升 LLM 在該領域的表現。本講座將深入淺出地介紹如何運用 Dify 平台，結合向量資料庫與大型語言模型，建構具備領域知識專長的 AI 應用。講座內容涵蓋 RAG 的運作原理、Dify 平台的功能與操作，以及如何利用 Dify 將專業領域的知識與 LLM 整合，以提升 LLM 在特定領域的表現。本講座的內容將應用外部呼叫的API來使用人工智慧模型，因此即使是普通的辦公電腦也能輕易建構 RAG 應用。本講座適合對 LLM 應用開發有興趣的師生、資訊人員，以及任何想了解如何打造專業 AI 應用的聽眾。 ##
+ audience: 教育研究所碩博生 ##
+ time: 2025/2 ##
+ keywords: Dify, LLM, RAG ##
+ relation_resource: 
