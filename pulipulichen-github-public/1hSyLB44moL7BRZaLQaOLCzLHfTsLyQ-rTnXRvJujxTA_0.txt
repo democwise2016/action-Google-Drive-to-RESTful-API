@@ -418,3 +418,15 @@ url: https://github.com/pulipulichen/docker-app-Video-Clip-Analyzer ##
  techniques: - **Docker**: 提供容器化部署，確保應用程式的可移植性和管理便利性。
 - **Auto Editor影片分析演算法**: 用於識別影片中的精華片段或重要內容。
 - **Python**:  用於處理和分析影片的程式碼。
+
+####
+
+url: https://github.com/pulipulichen/docker-app-Image-to-SVG ##
+ project_name: docker-app-Image-to-SVG ##
+ description_short_zh_tw: 將圖片轉換成SVG向量圖 ##
+ description_short_en: Converts images to SVG vector format. ##
+ description_zh_tw: 這個Docker APP會接收各種格式的點陣圖圖片（例如JPG、PNG等等）作為輸入，並將其轉換成SVG向量圖格式的檔案輸出。轉換後的SVG檔案可以用向量編輯軟體（例如Inkscape）進行編輯。 ##
+ description_en_us: This Docker APP takes various raster image formats (such as JPG, PNG, etc.) as input and converts them into SVG vector format files. The resulting SVG files can be edited using vector editing software (like Inkscape). ##
+ techniques: *   Docker: 提供容器化部署，確保應用程式具備可移植性和管理便利性。
+*   圖像向量化工具/函式庫: 使用工具或程式庫（例如Potrace或Inkscape指令），將點陣圖圖片轉換為SVG向量圖格式。
+*   Node.js 或 Python: 用於處理檔案的讀取、寫入以及協調不同處理步驟的程式碼。
