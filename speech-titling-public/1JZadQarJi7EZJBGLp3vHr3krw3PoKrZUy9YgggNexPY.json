@@ -160,5 +160,23 @@
     "time": "2025/5",
     "keywords": "",
     "relation_resource": "https://l.pulipuli.info/25/5/db"
+  },
+  {
+    "title_zh_TW": "迎戰AI時代：學術研究的知識獲取與學術倫理挑戰",
+    "title_english": "",
+    "description": "本場演講由國立政治大學圖書資訊與檔案學博士陳勇汀主講，內容區分成知識獲取、文獻探索、語意分析與學術倫理四個議題。演講首先探討在資訊爆炸的年代，研究者如何透過圖書館與學術資源突破關鍵字搜尋的限制，建立有效的知識獲取策略。接著介紹多種學術研究工具，包括 Scopus、Semantic Scholar 與 Connected Papers，這些平台主要依據關鍵字與引用關係協助研究者探索相關文獻與學術脈絡。在此基礎上，演講也進一步介紹結合大型語言模型的創新 AI 平台，例如 Consensus 可協助評估科學界共識、Elicit 擅長進行系統性回顧與結構化資料擷取，SciSpace 則整合了與 PDF 論文互動、主題分析與AI改寫等功能，協助研究者更快速掌握核心觀點與研究趨勢，提升文獻探索的深度與效率。最後，在學術倫理篇章中，講者提出 AI 工具常見的資料來源疑慮、掠奪性期刊混淆、語言偏見與內容同質化等問題，提醒研究者應保持批判思維與倫理意識。演講中與會者將實際操作Elicit的系統性文獻回顧、Connected Papers 的論文網路圖和 SciSpace 的與論文對話，讓與會者能親身體驗 AI 工具在研究流程中的應用價值。本演講適合所有志於活用AI提升研究效率和品質的學術研究者參與。",
+    "audience": "教師",
+    "time": "2025/9",
+    "keywords": "",
+    "relation_resource": "https://l.pulipuli.info/25/9/hsc/1"
+  },
+  {
+    "title_zh_TW": "迎戰AI時代：人工智慧多模態資料處理與分析",
+    "title_english": "Navigating the AI Era: Multi-modal Data Processing and Analysis with Artificial Intelligence",
+    "description": "現代社會資訊量暴增，數位與傳統媒介並存。過去，資料前處理十分耗時，尤其非結構化資料如紙本、照片，需大量人力時間來處理。現在，大型語言模型（LLMs）具備多模態能力，能有效分析非結構化圖片資料，並精準捕捉關鍵資訊。本次演講將從常見資料分析議題出發，引導聽眾運用LLMs開發客製化分析工具。我們將分享AI從掃描影像提取關鍵資訊的技術，並深入探討LLMs資料分析與視覺化呈現。本演講歡迎無基礎聽眾一同參與。若您有程式與資料分析經驗，更可以從本演講裡學到如何讓AI成為您的強大助力。",
+    "audience": "職員",
+    "time": "2025/9",
+    "keywords": "",
+    "relation_resource": "https://l.pulipuli.info/25/9/hsc/2"
   }
 ]

@@ -322,5 +322,14 @@
     "description_zh_tw": "這個Docker APP會接收各種格式的點陣圖圖片（例如JPG、PNG等等）作為輸入，並將其轉換成SVG向量圖格式的檔案輸出。轉換後的SVG檔案可以用向量編輯軟體（例如Inkscape）進行編輯。",
     "description_en_us": "This Docker APP takes various raster image formats (such as JPG, PNG, etc.) as input and converts them into SVG vector format files. The resulting SVG files can be edited using vector editing software (like Inkscape).",
     "techniques": "*   Docker: 提供容器化部署，確保應用程式具備可移植性和管理便利性。\n*   圖像向量化工具/函式庫: 使用工具或程式庫（例如Potrace或Inkscape指令），將點陣圖圖片轉換為SVG向量圖格式。\n*   Node.js 或 Python: 用於處理檔案的讀取、寫入以及協調不同處理步驟的程式碼。"
+  },
+  {
+    "url": "https://github.com/pulipulichen/HTML-QRCode-Generator",
+    "project_name": "HTML-QRCode-Generator",
+    "description_short_zh_tw": "輸入的網址產生QR Code的網頁工具。",
+    "description_short_en": "A web tool that generates QR codes from input URLs.",
+    "description_zh_tw": "這是一個用來根據使用者輸入的網址產生QR Code圖片的網頁工具。使用者只需要在指定的欄位輸入網址，工具就會立即產生對應的QR Code影像，方便使用者下載或使用。",
+    "description_en_us": "This is a web tool used to generate QR code images based on user-input URLs. Users simply need to enter a URL in the designated field, and the tool will immediately generate the corresponding QR code image for easy download or use.",
+    "techniques": "- **JavaScript**: 負責處理使用者輸入的資料並執行QR Code的生成演算法。\n- **HTML**: 提供使用者介面元素，以及用於顯示生成的QR Code影像。\n- **CSS**: 控制網頁的排版以及生成QR Code的視覺樣式。"
   }
 ]
